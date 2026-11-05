@@ -955,8 +955,8 @@ export const Dashboard: React.FC<DashboardProps> = ({ apiBaseUrl, onNavigateToRo
         </div>
       )}
 
-      {/* SAR InSAR Satellite Inspector Modal */}
-      {sarOpen && <SARInspector onClose={() => setSarOpen(false)} />}
+      {/* Live Sentinel-2 model screening modal */}
+      {sarOpen && <SARInspector apiBaseUrl={apiBaseUrl} onClose={() => setSarOpen(false)} />}
 
     </div>
   );

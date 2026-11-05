@@ -7,12 +7,13 @@ import { DataAnalysisPage } from "./pages/DataAnalysisPage";
 import { FieldReport } from "./pages/FieldReport";
 import { ProjectOverview } from "./pages/ProjectOverview";
 import { TerrainAnalysisPage } from "./pages/TerrainAnalysisPage";
+import LiveConsole from "./pages/LiveConsole";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { useLiveTelemetry } from "./hooks/useLiveTelemetry";
 import { syncOfficerToSupabase } from "./services/supabaseClient";
 import { mockApi } from "./services/mockApi";
 import { 
-  LayoutDashboard, Compass, Radio, Cpu, Smartphone, Home,
+  LayoutDashboard, Compass, Radio, Cpu, Smartphone, Home, Satellite,
   AlertTriangle, Clock, User, RefreshCw, X, ShieldAlert, SmartphoneNfc, Mountain, CheckCircle2, ShieldCheck, MapPin, KeyRound, Mail, Lock
 } from "lucide-react";
 
@@ -76,6 +77,7 @@ const NAV_TABS = [
   { key: "routing",      label: "Safe Routing",      icon: Compass         },
   { key: "iot",          label: "IoT Sensor Grid",   icon: Radio           },
   { key: "terrain3d",    label: "3D Terrain",        icon: Mountain        },
+  { key: "satellite",    label: "Live Satellite",     icon: Satellite       },
   { key: "reporting",    label: "Incident Log",      icon: Smartphone      },
 ] as const;
 
@@ -460,6 +462,7 @@ function App() {
 
       {/* ── MAIN CONTENT ────────────────────────────────────────────────── */}
       <main className="flex-grow">
+        {activeTab === "satellite"     && <LiveConsole />}
         {activeTab === "overview"      && <ProjectOverview onLaunchGIS={() => setActiveTab("dashboard")} onLaunchPrediction={() => setActiveTab("prediction")} />}
         {activeTab === "dashboard"     && <Dashboard apiBaseUrl={API_BASE_URL} onNavigateToRouting={handleNavigateToRouting} />}
         {activeTab === "prediction"    && <PredictionCorePage apiBaseUrl={API_BASE_URL} />}
