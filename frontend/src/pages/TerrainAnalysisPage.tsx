@@ -25,7 +25,7 @@ import {
   Info
 } from 'lucide-react';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+import { API_BASE_URL } from "../services/apiConfig";
 
 export const TerrainAnalysisPage: React.FC = () => {
   const { sensors, loading, refresh } = useLiveTelemetry(API_BASE_URL, 15000);

@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "functions": {
+    "api/v1/mosdac/latest.js": { "maxDuration": 30 }
+  }
+}

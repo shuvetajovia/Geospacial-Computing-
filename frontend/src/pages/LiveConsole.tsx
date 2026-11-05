@@ -3,7 +3,7 @@ import { Activity, Clock3, Loader2, MapPin, Radio, Satellite } from "lucide-reac
 import { MOSDACLiveCard } from "../components/MOSDACLiveCard";
 import { SARInspector } from "../components/SARInspector";
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+import { API_BASE_URL } from "../services/apiConfig";
 const NORTHEAST_STATES = ["Arunachal Pradesh", "Assam", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Sikkim", "Tripura"];
 
 interface DistrictPlace {
