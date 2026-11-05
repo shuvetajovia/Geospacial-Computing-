@@ -1,6 +1,7 @@
 {
   "framework": "vite",
   "functions": {
-    "api/v1/mosdac/latest.js": { "maxDuration": 30 }
+    "api/v1/mosdac/latest.js": { "maxDuration": 30 },
+    "api/v1/districts.js": { "maxDuration": 60 }
   }
 }

@@ -18,10 +18,13 @@ export const LiveConsole: React.FC = () => {
   const [districts, setDistricts] = useState<DistrictPlace[]>([]);
   const [selectedDistrict, setSelectedDistrict] = useState("");
   const [districtsLoading, setDistrictsLoading] = useState(false);
+  const [districtRetry, setDistrictRetry] = useState(0);
   const [districtError, setDistrictError] = useState<string | null>(null);
 
   useEffect(() => {
     let active = true;
+    const controller = new AbortController();
+    setDistrictsLoading(false);
     setDistricts([]);
     setSelectedDistrict("");
     setDistrictError(null);
@@ -29,19 +32,12 @@ export const LiveConsole: React.FC = () => {
 
     const loadDistricts = async () => {
       setDistrictsLoading(true);
-      const query = `[out:json][timeout:25];area["boundary"="administrative"]["admin_level"="4"]["name"="${selectedState}"]->.state;relation(area.state)["boundary"="administrative"]["admin_level"="6"];out center tags;`;
       try {
-        const response = await fetch(`https://overpass-api.de/api/interpreter?data=${encodeURIComponent(query)}`, { cache: "no-store" });
-        if (!response.ok) throw new Error(`OpenStreetMap district lookup returned ${response.status}.`);
-        const payload = await response.json();
-        const items = (payload.elements || [])
-          .filter((item: any) => item.tags?.name && Number.isFinite(item.center?.lat) && Number.isFinite(item.center?.lon))
-          .map((item: any) => ({ name: String(item.tags["name:en"] || item.tags.name), latitude: Number(item.center.lat), longitude: Number(item.center.lon) }))
-          .filter((item: DistrictPlace) => item.latitude >= 21.5 && item.latitude <= 29.8 && item.longitude >= 88 && item.longitude <= 97.5)
-          .sort((a: DistrictPlace, b: DistrictPlace) => a.name.localeCompare(b.name));
-        const unique = items.filter((item: DistrictPlace, index: number, all: DistrictPlace[]) => all.findIndex((entry) => entry.name === item.name) === index);
-        if (!unique.length) throw new Error("No district centers were returned for this state. Try again shortly.");
-        if (active) setDistricts(unique);
+        const response = await fetch(`/api/v1/districts?state=${encodeURIComponent(selectedState)}`, { signal: controller.signal });
+        const payload = await response.json().catch(() => null);
+        if (!response.ok) throw new Error(payload?.detail || `District lookup returned ${response.status}.`);
+        if (!Array.isArray(payload?.districts) || !payload.districts.length) throw new Error("No district centers returned. Please retry.");
+        if (active) setDistricts(payload.districts);
       } catch (cause) {
         if (active) setDistrictError(cause instanceof Error ? cause.message : "Could not load district list.");
       } finally {
@@ -50,8 +46,8 @@ export const LiveConsole: React.FC = () => {
     };
 
     void loadDistricts();
-    return () => { active = false; };
-  }, [selectedState]);
+    return () => { active = false; controller.abort(); };
+  }, [selectedState, districtRetry]);
 
   const district = districts.find((item) => item.name === selectedDistrict);
   return (
@@ -86,7 +82,7 @@ export const LiveConsole: React.FC = () => {
               </label>
             </div>
             {districtsLoading && <div className="mt-3 flex items-center gap-2 text-[10px] font-semibold text-textMuted"><Loader2 className="h-3.5 w-3.5 animate-spin" />Loading current district boundaries from OpenStreetMap…</div>}
-            {districtError && <p className="mt-3 rounded-lg border border-alertOrange/30 bg-alertOrange/5 p-2 text-[10px] font-semibold text-alertOrange">{districtError}</p>}
+            {districtError && <p className="mt-3 rounded-lg border border-alertOrange/30 bg-alertOrange/5 p-2 text-[10px] font-semibold text-alertOrange">{districtError} <button type="button" onClick={() => setDistrictRetry(value => value + 1)} className="ml-2 underline">Retry district lookup</button></p>}
             {district && <div className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-borderColor bg-bgPrimary p-3">
               <div className="text-[10px] text-textSecondary"><strong className="text-textPrimary">{district.name}, {selectedState}</strong><br />District center: {district.latitude.toFixed(4)}°N, {district.longitude.toFixed(4)}°E</div>
               <button onClick={() => setSentinelOpen(true)} className="rounded-lg bg-blue-600 px-4 py-2.5 text-[10px] font-black uppercase text-white hover:bg-blue-700">Check live scene & screen</button>
