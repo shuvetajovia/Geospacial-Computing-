@@ -956,7 +956,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ apiBaseUrl, onNavigateToRo
       )}
 
       {/* Live Sentinel-2 model screening modal */}
-      {sarOpen && <SARInspector apiBaseUrl={apiBaseUrl} onClose={() => setSarOpen(false)} />}
+      {sarOpen && <SARInspector apiBaseUrl={apiBaseUrl} initialLocation={{ latitude: 27.3389, longitude: 88.6065, label: "Gangtok, East Sikkim" }} onClose={() => setSarOpen(false)} />}
 
     </div>
   );

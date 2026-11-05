@@ -3,6 +3,7 @@ import { AlertTriangle, ExternalLink, Loader2, MapPin, Satellite, X } from "luci
 
 interface SARInspectorProps {
   apiBaseUrl: string;
+  initialLocation: { latitude: number; longitude: number; label: string };
   onClose: () => void;
 }
 
@@ -37,9 +38,9 @@ interface DetectionJob {
 
 const sleep = (milliseconds: number) => new Promise((resolve) => window.setTimeout(resolve, milliseconds));
 
-export const SARInspector: React.FC<SARInspectorProps> = ({ apiBaseUrl, onClose }) => {
-  const [latitude, setLatitude] = useState("27.3389");
-  const [longitude, setLongitude] = useState("88.6065");
+export const SARInspector: React.FC<SARInspectorProps> = ({ apiBaseUrl, initialLocation, onClose }) => {
+  const [latitude] = useState(initialLocation.latitude);
+  const [longitude] = useState(initialLocation.longitude);
   const [job, setJob] = useState<DetectionJob | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -48,8 +49,8 @@ export const SARInspector: React.FC<SARInspectorProps> = ({ apiBaseUrl, onClose 
   useEffect(() => () => controller.current?.abort(), []);
 
   const runDetection = async () => {
-    const lat = Number(latitude);
-    const lon = Number(longitude);
+    const lat = latitude;
+    const lon = longitude;
     if (!Number.isFinite(lat) || !Number.isFinite(lon) || lat < 21.5 || lat > 29.8 || lon < 88 || lon > 97.5) {
       setError("Enter coordinates inside the Northeast India coverage area (21.5–29.8°N, 88–97.5°E).");
       return;
@@ -98,20 +99,15 @@ export const SARInspector: React.FC<SARInspectorProps> = ({ apiBaseUrl, onClose 
             <div className="rounded-xl border border-blue-600/20 bg-blue-600/10 p-2 text-blue-500"><Satellite className="h-5 w-5" /></div>
             <div>
               <h2 className="text-sm font-black uppercase tracking-tight text-textPrimary">Live Sentinel‑2 Landslide Screening</h2>
-              <p className="mt-1 text-[10px] font-semibold text-textMuted">Public live scene catalog · real raster bands · local 14-channel model · Northeast India</p>
+              <p className="mt-1 text-[10px] font-semibold text-textMuted">{initialLocation.label} · live Sentinel scene catalog · local 14-channel research model</p>
             </div>
           </div>
           <button onClick={onClose} aria-label="Close" className="rounded-lg border border-borderColor p-2 text-textSecondary hover:bg-bgPrimary"><X className="h-4 w-4" /></button>
         </header>
 
         <div className="space-y-4 overflow-y-auto p-5">
-          <div className="grid gap-3 rounded-2xl border border-borderColor bg-bgPrimary p-4 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
-            <label className="text-[10px] font-bold uppercase text-textMuted">Latitude
-              <input value={latitude} onChange={(event) => setLatitude(event.target.value)} inputMode="decimal" className="mt-1 block w-full rounded-lg border border-borderColor bg-bgCard px-3 py-2 text-sm text-textPrimary" />
-            </label>
-            <label className="text-[10px] font-bold uppercase text-textMuted">Longitude
-              <input value={longitude} onChange={(event) => setLongitude(event.target.value)} inputMode="decimal" className="mt-1 block w-full rounded-lg border border-borderColor bg-bgCard px-3 py-2 text-sm text-textPrimary" />
-            </label>
+          <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-borderColor bg-bgPrimary p-4">
+            <div className="text-xs text-textSecondary"><strong className="text-textPrimary">{initialLocation.label}</strong><br />Screening around district center at {latitude.toFixed(4)}°N, {longitude.toFixed(4)}°E</div>
             <button onClick={runDetection} disabled={busy} className="flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2.5 text-xs font-black uppercase text-white disabled:cursor-wait disabled:opacity-60">
               {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <MapPin className="h-4 w-4" />}{busy ? "Processing live scene" : "Find scene & run model"}
             </button>
