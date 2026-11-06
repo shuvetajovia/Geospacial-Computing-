@@ -85,7 +85,7 @@ type TabKey = typeof NAV_TABS[number]["key"];
 
 function App() {
   const [activeTab, setActiveTab] = useState<TabKey>("overview");
-  const { sensors, refresh } = useLiveTelemetry(API_BASE_URL, 15000);
+  const { sensors, refresh, isSupabaseLive } = useLiveTelemetry(API_BASE_URL, 15000);
 
   const [istTime, setIstTime] = useState<string>("");
   const [countdown, setCountdown] = useState<number>(15);
@@ -371,6 +371,12 @@ function App() {
 
         {/* Top Controls */}
         <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
+          <div className="hidden sm:flex items-center gap-1.5 text-[10px] font-bold bg-bgPrimary border border-borderColor px-2.5 py-1.5 rounded-xl shadow-sm" title={isSupabaseLive ? "Supabase PostgreSQL Database Connected (Project: zxtcshattguqoosobkji)" : "Offline Mode / Fallback Active"}>
+            <span className={`w-2 h-2 rounded-full ${isSupabaseLive ? "bg-emerald-500 animate-pulse" : "bg-amber-500"}`}></span>
+            <span className={`font-mono ${isSupabaseLive ? "text-emerald-500" : "text-amber-500"}`}>
+              {isSupabaseLive ? "Supabase Live" : "Offline"}
+            </span>
+          </div>
           <div className="hidden sm:flex items-center gap-1 text-[10px] font-black text-textSecondary bg-bgPrimary border border-borderColor px-3 py-1.5 rounded-xl">
             <Clock className="w-3.5 h-3.5 text-blue-600" />
             <span className="font-mono">{istTime}</span>

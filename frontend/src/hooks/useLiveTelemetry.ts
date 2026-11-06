@@ -164,6 +164,7 @@ export function useLiveTelemetry(
   const [loading, setLoading] = useState<boolean>(() => globalSensors.length === 0);
   const [error, setError] = useState<string | null>(null);
   const [isOfflineFallback, setIsOfflineFallback] = useState<boolean>(false);
+  const [supabaseConnected, setSupabaseConnected] = useState<boolean>(() => isSupabaseConfigured);
   const realtimeChannelRef = useRef<ReturnType<NonNullable<typeof supabase>["channel"]> | null>(null);
 
   // Clear stale persisted mock drift from localStorage
@@ -177,9 +178,44 @@ export function useLiveTelemetry(
   const fetchTelemetry = useCallback(async () => {
     try {
       // 1. Fetch live real-time meteorological telemetry across all 41 stations
-      const liveSensors = await fetchLiveMeteorologicalTelemetry();
+      let liveSensors = await fetchLiveMeteorologicalTelemetry();
+
+      // 2. Direct Sync from Supabase sensor_nodes table (Live Database)
+      if (supabase && isSupabaseConfigured) {
+        try {
+          const { data: dbNodes, error: dbErr } = await supabase
+            .from("sensor_nodes")
+            .select("*");
+          if (!dbErr && dbNodes && dbNodes.length > 0) {
+            setSupabaseConnected(true);
+            const dbMap = new Map((dbNodes as SupabaseSensorRow[]).map(r => [r.id, r]));
+            liveSensors = liveSensors.map(s => {
+              const dbRow = dbMap.get(s.id);
+              if (dbRow) {
+                return {
+                  ...s,
+                  soil_moisture: dbRow.soil_moisture,
+                  rain_24h_obs: dbRow.rain_24h_obs,
+                  rain_48h_prior: dbRow.rain_48h_prior,
+                  rain_72h_prior: dbRow.rain_72h_prior,
+                  rain_7d_prior: dbRow.rain_7d_prior,
+                  api_7d: dbRow.api_7d,
+                  r24_seasonal_anom: dbRow.r24_seasonal_anom,
+                  api_seasonal_anom: dbRow.api_seasonal_anom,
+                  last_updated: dbRow.last_updated,
+                  weatherFallback: false, // Sourced from live Supabase DB
+                };
+              }
+              return s;
+            });
+          }
+        } catch (dbErr) {
+          console.warn("[useLiveTelemetry] Supabase sensor_nodes query notice:", dbErr);
+          setSupabaseConnected(false);
+        }
+      }
       
-      // 2. Fetch active CAP alerts from Supabase if configured
+      // 3. Fetch active CAP alerts from Supabase if configured
       let activeAlerts: CAPAlertData[] = [];
       if (supabase && isSupabaseConfigured) {
         try {
@@ -198,7 +234,7 @@ export function useLiveTelemetry(
         activeAlerts = [];
       }
 
-      // 3. Compute dynamic corridor statuses based on live station telemetry
+      // 4. Compute dynamic corridor statuses based on live station telemetry
       const baseCorridors = mockApi.getCorridors();
       const dynamicCorridors = computeDynamicCorridors(baseCorridors, liveSensors);
 
@@ -282,7 +318,7 @@ export function useLiveTelemetry(
     loading,
     error,
     isOfflineFallback,
-    isSupabaseLive: isSupabaseConfigured && !isOfflineFallback,
+    isSupabaseLive: supabaseConnected && isSupabaseConfigured,
     refresh: fetchTelemetry,
   };
 }

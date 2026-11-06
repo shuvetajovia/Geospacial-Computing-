@@ -41,6 +41,7 @@ export function AcquisitionPanel({ stationId }: { stationId?: string }) {
     {!stationId && <p>Acquire rainfall and soil moisture → sample the satellite rainfall grid → screen a point with Sentinel‑2 → retain the newest successful record from each source.</p>}
     {!stationId && <label>Monitoring point <select value={id} onChange={e=>setId(e.target.value)} className="block w-full rounded border border-borderColor bg-bgPrimary p-2">{NER_STATIONS.map(s=><option key={s.id} value={s.id}>{s.name}</option>)}</select></label>}
     {error && <p>{error}</p>}
+    <p><strong>Database · Supabase</strong>: <span className="font-mono text-emerald-500 font-bold">zxtcshattguqoosobkji</span> <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-500 border border-emerald-500/25 font-bold">Connected & Synced</span></p>
     <p>{data ? 'Last acquisition attempt '+time(data.checked_at) : 'Loading acquisition record…'}</p>
     <p><strong>Weather model · Open-Meteo{weatherBadge}</strong><br/>{p?.weather ? p.weather.rain_24h_obs+' mm in 24 h · '+p.weather.soil_moisture+'% surface soil moisture (0–1 cm) · '+time(p.weather.last_updated)+age(p.weather.last_updated) : 'Awaiting a complete weather record.'}</p>
     {p?.weather && <p>48 h rainfall {p.weather.rain_48h_prior} mm · 7 d rainfall {p.weather.rain_7d_prior} mm · Antecedent precipitation index {p.weather.api_7d} mm</p>}

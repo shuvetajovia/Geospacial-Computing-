@@ -11,7 +11,7 @@ interface IoTSensorPageProps {
 }
 
 export const IoTSensorPage: React.FC<IoTSensorPageProps> = ({ apiBaseUrl }) => {
-  const { sensors, alerts, loading, refresh } = useLiveTelemetry(apiBaseUrl, 10000);
+  const { sensors, alerts, loading, refresh, isSupabaseLive } = useLiveTelemetry(apiBaseUrl, 10000);
   const [selectedSensorId, setSelectedSensorId] = useState<string>("SN-ASM-GUA-01");
   const [graphRefreshCounter, setGraphRefreshCounter] = useState<number>(0);
 
@@ -63,9 +63,19 @@ export const IoTSensorPage: React.FC<IoTSensorPageProps> = ({ apiBaseUrl }) => {
               <h2 className="text-base font-extrabold text-textPrimary uppercase tracking-tight">
                 IoT Sensor Grid & Telemetry
               </h2>
-              <p className="text-[10px] text-textSecondary leading-snug mt-0.5">
-                {sensors.length} monitoring points with stored weather-model readings across Northeast India
-              </p>
+              <div className="flex items-center flex-wrap gap-2 mt-0.5">
+                <p className="text-[10px] text-textSecondary leading-snug">
+                  {sensors.length} monitoring points with stored weather-model readings across Northeast India
+                </p>
+                <span className={`text-[9px] px-2 py-0.5 rounded-full font-bold flex items-center gap-1 border ${
+                  isSupabaseLive
+                    ? "bg-emerald-500/10 text-emerald-500 border-emerald-500/25"
+                    : "bg-amber-500/10 text-amber-500 border-amber-500/25"
+                }`}>
+                  <span className={`w-1.5 h-1.5 rounded-full ${isSupabaseLive ? "bg-emerald-500 animate-pulse" : "bg-amber-500"}`}></span>
+                  {isSupabaseLive ? "Supabase Live Sync (zxtcshattguqoosobkji)" : "Offline Mode"}
+                </span>
+              </div>
             </div>
           </div>
 
