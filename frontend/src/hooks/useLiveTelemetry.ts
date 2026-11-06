@@ -19,6 +19,7 @@ export interface SensorNodeData {
   api_seasonal_anom: number;
   last_updated: string;
   sentinel?: {acquired_at:string; candidate_pct:number; mean_elevation_m:number; mean_slope_deg:number};
+  persiann?: {period_start:string; value:number; units:string; file:string};
   hem?: {acquired_at:string; value:number; units:string};
 }
 

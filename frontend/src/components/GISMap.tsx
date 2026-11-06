@@ -478,7 +478,7 @@ export const GISMap: React.FC<GISMapProps> = ({
                         <p>24h Rain Accumulation: <strong className="text-indigo-600">{s.rain_24h_obs.toFixed(1)} mm</strong></p>
                         <p>API 7d Index: <strong>{s.api_7d.toFixed(1)} mm</strong></p>
                         <p>Sentinel screening: {s.sentinel ? s.sentinel.candidate_pct + "% candidate pixels · " + new Date(s.sentinel.acquired_at).toLocaleDateString() : "Awaiting scene"}</p>
-                        <p>Satellite rainfall: {s.hem ? s.hem.value + " " + s.hem.units + " · " + new Date(s.hem.acquired_at).toLocaleString() : "Awaiting HEM raster"}</p>
+                        <p>Satellite rainfall: {s.hem ? s.hem.value + " " + s.hem.units + " · " + new Date(s.hem.acquired_at).toLocaleString() : s.persiann ? s.persiann.value + " mm in 24 h · PERSIANN · " + s.persiann.period_start.slice(0,10) + " UTC" : "Awaiting satellite rainfall"}</p>
                         <p className="border-t border-borderColor/60 mt-1 pt-1">
                           Alert: <strong style={{ color: color }}>{risk.label}</strong>
                         </p>

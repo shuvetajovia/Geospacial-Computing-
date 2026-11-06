@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
+from persiann import sample_daily
 
 ROOT = Path(__file__).resolve().parents[1]
 STATIONS = json.loads((ROOT / 'frontend/src/services/stations.json').read_text())
@@ -108,6 +109,8 @@ def main():
         try: weather(STATIONS[i:i+10],rows)
         except (requests.RequestException,ValueError,KeyError) as exc: status['weather']='Partial or unavailable: '+type(exc).__name__
     status.setdefault('weather','Weather acquisition checked')
+    try: status['persiann']=sample_daily(rows, STATIONS, checked, keep)
+    except Exception as exc: status['persiann']='Satellite update failed: '+type(exc).__name__
     try: status['hem']=raster(rows)
     except Exception as exc: status['hem']='Raster acquisition failed: '+type(exc).__name__
     site = min(STATIONS, key=lambda s: rows[s['id']].get('screen_checked_at',''))

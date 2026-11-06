@@ -4,6 +4,7 @@ export interface StationCoordinate { id: string; name: string; latitude: number;
 export const NER_STATIONS: StationCoordinate[] = stations;
 export type PointLayers = {
   weather?: Pick<SensorNodeData, "last_updated" | "soil_moisture" | "rain_24h_obs" | "rain_48h_prior" | "rain_72h_prior" | "rain_7d_prior" | "api_7d">;
+  persiann?: {period_start:string; value:number; units:string; file:string};
   hem?: {value: number; units: string; acquired_at: string; filename: string};
   sentinel?: {scene_id: string; acquired_at: string; mean_slope_deg: number; mean_elevation_m: number; candidate_pct: number};
   screen_status?: string;
@@ -37,6 +38,6 @@ export async function fetchLiveMeteorologicalTelemetry(): Promise<SensorNodeData
   return stations.flatMap(site => {
     const point = snapshot.points[site.id];
     if (!point?.weather) return [];
-    return [{...site, ...point.weather, sentinel:point.sentinel, hem:point.hem, r24_seasonal_anom: NaN, api_seasonal_anom: NaN}];
+    return [{...site, ...point.weather, sentinel:point.sentinel, hem:point.hem, persiann:point.persiann, r24_seasonal_anom: NaN, api_seasonal_anom: NaN}];
   });
 }
