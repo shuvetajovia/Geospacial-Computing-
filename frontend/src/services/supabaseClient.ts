@@ -1,7 +1,10 @@
 import { createClient } from "@supabase/supabase-js";
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string;
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY as string;
+const DEFAULT_SUPABASE_URL = "https://zxtcshattguqoosobkji.supabase.co";
+const DEFAULT_SUPABASE_ANON_KEY = "sb_publishable_ZNPpONJIf8TpYZMpVZIi6w_iFbZbYNY";
+
+const SUPABASE_URL = (import.meta.env.VITE_SUPABASE_URL as string) || DEFAULT_SUPABASE_URL;
+const SUPABASE_ANON_KEY = (import.meta.env.VITE_SUPABASE_ANON_KEY as string) || DEFAULT_SUPABASE_ANON_KEY;
 
 // Detect whether Supabase is configured (both vars must be real values)
 export const isSupabaseConfigured =

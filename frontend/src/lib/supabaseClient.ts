@@ -1,9 +1,12 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = "https://alcqylohtdqbircojdsl.supabase.co";
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || "";
+const DEFAULT_SUPABASE_URL = "https://zxtcshattguqoosobkji.supabase.co";
+const DEFAULT_SUPABASE_ANON_KEY = "sb_publishable_ZNPpONJIf8TpYZMpVZIi6w_iFbZbYNY";
 
-export const isSupabaseConfigured = Boolean(supabaseAnonKey);
+const supabaseUrl = (import.meta.env.VITE_SUPABASE_URL as string) || DEFAULT_SUPABASE_URL;
+const supabaseAnonKey = (import.meta.env.VITE_SUPABASE_ANON_KEY as string) || DEFAULT_SUPABASE_ANON_KEY;
+
+export const isSupabaseConfigured = Boolean(supabaseAnonKey && supabaseAnonKey.length > 20);
 
 // A Proxy-based fallback dummy client that handles any method invocation (e.g. from().select())
 // gracefully, returning empty datasets or error indicators rather than raising runtime errors.

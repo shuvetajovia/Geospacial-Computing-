@@ -1,5 +1,6 @@
 import type { SensorNodeData } from "../hooks/useLiveTelemetry";
 import stations from "./stations.json";
+import { supabase, isSupabaseConfigured, SupabaseSensorRow } from "./supabaseClient";
 export interface StationCoordinate { id: string; name: string; latitude: number; longitude: number }
 export const NER_STATIONS: StationCoordinate[] = stations;
 export type PointLayers = {
@@ -49,21 +50,55 @@ export function readPointSnapshot(): Promise<Snapshot> {
         const data = await response.json();
         if (data?.points && Date.parse(data.checked_at) >= Date.parse(latest.checked_at)) fetched = data;
       }
-    } catch { /* network unavailable — keep last good record */ }
+    } catch { /* network unavailable — check Supabase below */ }
+
+    // Query Supabase sensor_nodes as live/static fallback database
+    let dbMap: Record<string, SupabaseSensorRow> = {};
+    if (supabase && isSupabaseConfigured) {
+      try {
+        const { data: dbRows } = await supabase.from("sensor_nodes").select("*");
+        if (dbRows && dbRows.length > 0) {
+          for (const row of dbRows as SupabaseSensorRow[]) {
+            dbMap[row.id] = row;
+          }
+        }
+      } catch (err) {
+        console.warn("[liveWeatherService] Supabase fallback query notice:", err);
+      }
+    }
+
     const points: Snapshot["points"] = {};
     for (const {id} of stations) {
       const old = latest.points[id] || packaged.points[id] || {};
       const fresh = fetched?.points[id];
-      const accept = usableWeather(fresh) && (!usableWeather(old) ||
-        Date.parse(fresh!.weather!.last_updated) >= Date.parse(old.weather!.last_updated));
-      const chosenWeather = accept ? fresh!.weather : old.weather;
-      // Only mark as fallback if the chosen record is actually stale (>6 h old).
-      // A "Partial" network status does NOT make fresh per-station data a fallback.
+      const db = dbMap[id];
+      const dbWeather = db ? {
+        last_updated: db.last_updated,
+        soil_moisture: db.soil_moisture,
+        rain_24h_obs: db.rain_24h_obs,
+        rain_48h_prior: db.rain_48h_prior,
+        rain_72h_prior: db.rain_72h_prior,
+        rain_7d_prior: db.rain_7d_prior,
+        api_7d: db.api_7d,
+      } : undefined;
+
+      // Select the newest valid weather record among GitHub fresh, Supabase DB, and packaged
+      let chosenWeather = old.weather;
+      if (usableWeather(fresh)) {
+        chosenWeather = fresh!.weather;
+      }
+      if (dbWeather && usableWeather({ weather: dbWeather })) {
+        if (!chosenWeather || Date.parse(dbWeather.last_updated) >= Date.parse(chosenWeather.last_updated)) {
+          chosenWeather = dbWeather;
+        }
+      }
+
+      // Only mark as fallback if the chosen record is genuinely stale (>6 h old).
       const isFallback = isStaleWeather(chosenWeather);
       points[id] = {...old, ...fresh, weather: chosenWeather, weatherFallback: isFallback};
     }
     latest = {...(fetched || latest), points};
-    nextCheck = Date.now() + (fetched ? 300000 : 60000);
+    nextCheck = Date.now() + (fetched || Object.keys(dbMap).length > 0 ? 300000 : 60000);
     return latest;
   })().finally(() => { pending = undefined; });
   return pending;

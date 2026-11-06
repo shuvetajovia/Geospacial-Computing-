@@ -253,13 +253,20 @@ export function useLiveTelemetry(
             });
         }
       )
+      .on(
+        "postgres_changes",
+        { event: "*", schema: "public", table: "sensor_nodes" },
+        () => {
+          fetchTelemetry();
+        }
+      )
       .subscribe();
 
     realtimeChannelRef.current = channel;
     return () => {
       supabase!.removeChannel(channel);
     };
-  }, []);
+  }, [fetchTelemetry]);
 
   // ── Initial fetch + live polling interval ────────────────
   useEffect(() => {
