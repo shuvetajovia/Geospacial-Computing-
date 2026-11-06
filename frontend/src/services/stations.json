@@ -1,0 +1,248 @@
+[
+  {
+    "id": "SN-ASM-GUA-01",
+    "name": "Guwahati Urban Hill Slopes (Kamrup Metro)",
+    "latitude": 26.1445,
+    "longitude": 91.7362
+  },
+  {
+    "id": "SN-ASM-SIL-01",
+    "name": "Silchar Hillocks (Cachar)",
+    "latitude": 24.8333,
+    "longitude": 92.7789
+  },
+  {
+    "id": "SN-ASM-DH-01",
+    "name": "Dima Hasao Rural Settlements",
+    "latitude": 25.1833,
+    "longitude": 93.0167
+  },
+  {
+    "id": "SN-ASM-HAF-01",
+    "name": "Haflong Tribal Slopes",
+    "latitude": 25.1667,
+    "longitude": 93.03
+  },
+  {
+    "id": "SN-ASM-KA-01",
+    "name": "Karbi Anglong Remote Hamlets",
+    "latitude": 25.8489,
+    "longitude": 93.4385
+  },
+  {
+    "id": "SN-ASM-RRL-01",
+    "name": "Lumding-Badarpur Hill Railway Cut",
+    "latitude": 25.021,
+    "longitude": 93.023
+  },
+  {
+    "id": "SN-MEG-SHI-01",
+    "name": "Shillong Municipal Cuts",
+    "latitude": 25.5788,
+    "longitude": 91.8831
+  },
+  {
+    "id": "SN-MEG-TUR-01",
+    "name": "Tura Town Slopes",
+    "latitude": 25.514,
+    "longitude": 90.22
+  },
+  {
+    "id": "SN-MEG-CHE-01",
+    "name": "Cherrapunji Terraced Valleys",
+    "latitude": 25.2702,
+    "longitude": 91.7323
+  },
+  {
+    "id": "SN-MEG-MAW-01",
+    "name": "Mawsynram Tribal Hamlets",
+    "latitude": 25.3,
+    "longitude": 91.5833
+  },
+  {
+    "id": "SN-MEG-EKH-01",
+    "name": "East Khasi Hills Connectors",
+    "latitude": 25.42,
+    "longitude": 91.9
+  },
+  {
+    "id": "SN-SKM-GAN-01",
+    "name": "Gangtok Municipal Slopes",
+    "latitude": 27.3314,
+    "longitude": 88.6138
+  },
+  {
+    "id": "SN-SKM-NAM-01",
+    "name": "Namchi Urban Ridge",
+    "latitude": 27.1667,
+    "longitude": 88.35
+  },
+  {
+    "id": "SN-SKM-MAN-01",
+    "name": "Mangan Rural Farming Slopes",
+    "latitude": 27.5,
+    "longitude": 88.5167
+  },
+  {
+    "id": "SN-SKM-DZO-01",
+    "name": "Dzongu Tribal Reserve",
+    "latitude": 27.53,
+    "longitude": 88.48
+  },
+  {
+    "id": "SN-SKM-CHU-01",
+    "name": "Chungthang Valley Slope",
+    "latitude": 27.6042,
+    "longitude": 88.6472
+  },
+  {
+    "id": "SN-NGL-KOH-01",
+    "name": "Kohima Town Ridges",
+    "latitude": 25.6751,
+    "longitude": 94.1116
+  },
+  {
+    "id": "SN-NGL-MOK-01",
+    "name": "Mokokchung Urban Slopes",
+    "latitude": 26.3263,
+    "longitude": 94.52
+  },
+  {
+    "id": "SN-NGL-PHE-01",
+    "name": "Phek Hill Farming Villages",
+    "latitude": 25.6667,
+    "longitude": 94.5
+  },
+  {
+    "id": "SN-NGL-WOK-01",
+    "name": "Wokha Terraced Hamlets",
+    "latitude": 26.0833,
+    "longitude": 94.25
+  },
+  {
+    "id": "SN-NGL-KIP-01",
+    "name": "Kiphire Remote Border Tracks",
+    "latitude": 25.9,
+    "longitude": 94.7833
+  },
+  {
+    "id": "SN-MZR-AIZ-01",
+    "name": "Aizawl Capital Ridge Slopes",
+    "latitude": 23.7307,
+    "longitude": 92.7173
+  },
+  {
+    "id": "SN-MZR-LUN-01",
+    "name": "Lunglei Municipal Zone",
+    "latitude": 22.8864,
+    "longitude": 92.7483
+  },
+  {
+    "id": "SN-MZR-CHA-01",
+    "name": "Champhai Agricultural Slopes",
+    "latitude": 23.4757,
+    "longitude": 93.3277
+  },
+  {
+    "id": "SN-MZR-SER-01",
+    "name": "Serchhip Rural Clusters",
+    "latitude": 23.3,
+    "longitude": 92.8333
+  },
+  {
+    "id": "SN-MZR-LAW-01",
+    "name": "Lawngtlai Hill Settlements",
+    "latitude": 22.5333,
+    "longitude": 92.9
+  },
+  {
+    "id": "SN-MNP-IMP-01",
+    "name": "Imphal Valley Border Cuts",
+    "latitude": 24.817,
+    "longitude": 93.9368
+  },
+  {
+    "id": "SN-MNP-UKH-01",
+    "name": "Ukhrul Rural Hamlets",
+    "latitude": 25.1167,
+    "longitude": 94.4333
+  },
+  {
+    "id": "SN-MNP-TAM-01",
+    "name": "Tamenglong Tribal Slopes",
+    "latitude": 24.9833,
+    "longitude": 93.5
+  },
+  {
+    "id": "SN-MNP-SEN-01",
+    "name": "Senapati Feeder Tracks",
+    "latitude": 25.2667,
+    "longitude": 94.0667
+  },
+  {
+    "id": "SN-MNP-CHU-01",
+    "name": "Churachandpur Hill Clusters",
+    "latitude": 24.3333,
+    "longitude": 93.6833
+  },
+  {
+    "id": "SN-ARN-ITA-01",
+    "name": "Itanagar Capital Slopes",
+    "latitude": 27.0844,
+    "longitude": 93.6053
+  },
+  {
+    "id": "SN-ARN-PAS-01",
+    "name": "Pasighat Hill Slopes",
+    "latitude": 28.0667,
+    "longitude": 95.3333
+  },
+  {
+    "id": "SN-ARN-TAW-01",
+    "name": "Tawang Valley Settlements",
+    "latitude": 27.5849,
+    "longitude": 91.8623
+  },
+  {
+    "id": "SN-ARN-BOM-01",
+    "name": "Bomdila Alpine Hamlets",
+    "latitude": 27.2667,
+    "longitude": 92.4
+  },
+  {
+    "id": "SN-ARN-ZIR-01",
+    "name": "Ziro Valley Farming Slopes",
+    "latitude": 27.55,
+    "longitude": 93.8333
+  },
+  {
+    "id": "SN-ARN-ANJ-01",
+    "name": "Anjaw Border Hamlets",
+    "latitude": 28.05,
+    "longitude": 96.85
+  },
+  {
+    "id": "SN-TPR-AGA-01",
+    "name": "Agartala Ridge Settlements",
+    "latitude": 23.8315,
+    "longitude": 91.2868
+  },
+  {
+    "id": "SN-TPR-JAM-01",
+    "name": "Jampui Hill Slopes",
+    "latitude": 23.85,
+    "longitude": 92.27
+  },
+  {
+    "id": "SN-TPR-DHA-01",
+    "name": "Dharmanagar Settlement",
+    "latitude": 24.38,
+    "longitude": 92.18
+  },
+  {
+    "id": "SN-TPR-DHL-01",
+    "name": "Dhalai District Slopes",
+    "latitude": 23.84,
+    "longitude": 91.98
+  }
+]

@@ -864,7 +864,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ apiBaseUrl, onNavigateToRo
                     </div>
                     <div className="p-2 bg-bgPrimary rounded-xl border border-borderColor">
                       <div className="text-[9px] text-textMuted uppercase font-bold">Seasonal Anomaly</div>
-                      <div className="text-xs font-black text-textPrimary">{selectedSegmentDetail.telemetry.r24_seasonal_anom.toFixed(1)} mm</div>
+                      <div className="text-xs font-black text-textPrimary">Unavailable</div>
                     </div>
                   </div>
                 </div>
@@ -929,11 +929,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ apiBaseUrl, onNavigateToRo
                   </div>
                   <div className="flex justify-between">
                     <span>Precipitation Seasonal Anomaly:</span>
-                    <span className="text-alertOrange font-bold">{selectedSensorDetail.r24_seasonal_anom.toFixed(1)} mm</span>
+                    <span className="text-alertOrange font-bold">Unavailable</span>
                   </div>
                   <div className="flex justify-between">
                     <span>API Seasonal Anomaly Z-score:</span>
-                    <span className="text-textPrimary font-bold">{selectedSensorDetail.api_seasonal_anom.toFixed(1)} mm</span>
+                    <span className="text-textPrimary font-bold">Unavailable</span>
                   </div>
                 </div>
 

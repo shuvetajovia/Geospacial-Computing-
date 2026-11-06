@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { mockApi } from "../services/mockApi";
-import { supabase, isSupabaseConfigured, SupabaseSensorRow, SupabaseAlertRow } from "../services/supabaseClient";
+import { supabase, isSupabaseConfigured, SupabaseAlertRow } from "../services/supabaseClient";
 import { fetchLiveMeteorologicalTelemetry } from "../services/liveWeatherService";
 import { computeSensorRisk } from "../lib/riskUtils";
 
@@ -18,6 +18,8 @@ export interface SensorNodeData {
   r24_seasonal_anom: number;
   api_seasonal_anom: number;
   last_updated: string;
+  sentinel?: {acquired_at:string; candidate_pct:number; mean_elevation_m:number; mean_slope_deg:number};
+  hem?: {acquired_at:string; value:number; units:string};
 }
 
 export interface CorridorSection {
@@ -63,25 +65,6 @@ export interface CAPAlertData {
     senderName: string;
     area: { areaDesc: string; polygon?: string }[];
   }[];
-}
-
-// Map Supabase sensor row → SensorNodeData
-function mapSensorRow(row: SupabaseSensorRow): SensorNodeData {
-  return {
-    id: row.id,
-    name: row.name,
-    latitude: row.latitude,
-    longitude: row.longitude,
-    soil_moisture: Number(row.soil_moisture),
-    rain_24h_obs: Number(row.rain_24h_obs),
-    rain_48h_prior: Number(row.rain_48h_prior),
-    rain_72h_prior: Number(row.rain_72h_prior),
-    rain_7d_prior: Number(row.rain_7d_prior),
-    api_7d: Number(row.api_7d),
-    r24_seasonal_anom: Number(row.r24_seasonal_anom),
-    api_seasonal_anom: Number(row.api_seasonal_anom),
-    last_updated: row.last_updated,
-  };
 }
 
 // Map Supabase alert row → CAPAlertData
@@ -210,7 +193,7 @@ export function useLiveTelemetry(
       }
 
       if (activeAlerts.length === 0) {
-        activeAlerts = mockApi.getActiveAlerts();
+        activeAlerts = [];
       }
 
       // 3. Compute dynamic corridor statuses based on live station telemetry
@@ -230,9 +213,9 @@ export function useLiveTelemetry(
     } catch (err: any) {
       console.warn("[useLiveTelemetry] Fallback notice:", err?.message);
       
-      const fallbackSensors = mockApi.getSensors();
+      const fallbackSensors = globalSensors;
       const fallbackCorridors = computeDynamicCorridors(mockApi.getCorridors(), fallbackSensors);
-      const fallbackAlerts = mockApi.getActiveAlerts();
+      const fallbackAlerts = globalAlerts;
 
       globalSensors = fallbackSensors;
       globalCorridors = fallbackCorridors;
@@ -241,6 +224,7 @@ export function useLiveTelemetry(
       setSensors(fallbackSensors);
       setCorridors(fallbackCorridors);
       setAlerts(fallbackAlerts);
+      setError("Showing latest stored point data where available.");
       setIsOfflineFallback(true);
       setLoading(false);
     }
@@ -253,20 +237,6 @@ export function useLiveTelemetry(
     const channelId = `sensor-live-feed-${Math.random().toString(36).substring(7)}`;
     const channel = supabase!
       .channel(channelId)
-      .on(
-        "postgres_changes",
-        { event: "*", schema: "public", table: "sensor_nodes" },
-        (payload) => {
-          if (payload.eventType === "UPDATE" || payload.eventType === "INSERT") {
-            const updated = mapSensorRow(payload.new as SupabaseSensorRow);
-            setSensors((prev) => {
-              const next = prev.map((s) => (s.id === updated.id ? updated : s));
-              setCorridors((prevCorridors) => computeDynamicCorridors(prevCorridors, next));
-              return next;
-            });
-          }
-        }
-      )
       .on(
         "postgres_changes",
         { event: "*", schema: "public", table: "cap_alerts" },

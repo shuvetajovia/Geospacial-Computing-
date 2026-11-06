@@ -1,5 +1,6 @@
+import { AcquisitionPanel } from "../components/AcquisitionPanel";
 import React, { useEffect, useState } from "react";
-import { Activity, Clock3, Loader2, MapPin, Radio, Satellite } from "lucide-react";
+import { Activity, Loader2, MapPin, Satellite } from "lucide-react";
 import { MOSDACLiveCard } from "../components/MOSDACLiveCard";
 import { SARInspector } from "../components/SARInspector";
 
@@ -108,11 +109,7 @@ export const LiveConsole: React.FC = () => {
             <p className="mt-3 text-[9px] font-semibold text-textMuted">Sentinel revisit and processing cadence is days, not 15 minutes. Candidate masks are not confirmed landslides.</p>
           </article>
 
-          <article className="rounded-2xl border border-borderColor bg-bgCard p-5">
-            <div className="flex items-center gap-2 text-cyan-500"><Radio className="h-4 w-4" /><h2 className="text-xs font-black uppercase text-textPrimary">Ground telemetry</h2></div>
-            <p className="mt-2 text-xs leading-relaxed text-textSecondary">There is no physical IoT gateway connected. Soil moisture and pore pressure can be shown as derived estimates from live satellite rainfall plus terrain, clearly labeled as estimates rather than sensor measurements. This page currently reads MOSDAC catalog metadata only; it does not yet download or process the HDF rainfall raster needed to calculate those estimates.</p>
-            <div className="mt-4 flex items-center gap-2 rounded-xl border border-borderColor bg-bgPrimary p-3 text-[10px] font-bold text-textMuted"><Clock3 className="h-4 w-4" /> Derived estimates are approved; live raster ingestion is the remaining data step.</div>
-          </article>
+          <AcquisitionPanel />
         </section>
 
         <section className="rounded-2xl border border-borderColor bg-bgCard p-5">

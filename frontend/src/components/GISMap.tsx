@@ -474,10 +474,11 @@ export const GISMap: React.FC<GISMapProps> = ({
                       </div>
                       <div className="text-[10px] space-y-0.5 mt-1 font-bold text-textSecondary">
                         <p>ID: <strong className="font-mono text-textPrimary">{s.id}</strong></p>
-                        <p>Soil Moisture VWC: <strong className="text-blue-600">{s.soil_moisture.toFixed(1)}%</strong></p>
+                        <p>Open-Meteo weather model · {new Date(s.last_updated).toLocaleString()}</p><p>Surface soil moisture: <strong className="text-blue-600">{s.soil_moisture.toFixed(1)}%</strong></p>
                         <p>24h Rain Accumulation: <strong className="text-indigo-600">{s.rain_24h_obs.toFixed(1)} mm</strong></p>
                         <p>API 7d Index: <strong>{s.api_7d.toFixed(1)} mm</strong></p>
-                        <p>Seasonal Anomaly: <strong>{s.r24_seasonal_anom.toFixed(1)} mm</strong></p>
+                        <p>Sentinel screening: {s.sentinel ? s.sentinel.candidate_pct + "% candidate pixels · " + new Date(s.sentinel.acquired_at).toLocaleDateString() : "Awaiting scene"}</p>
+                        <p>Satellite rainfall: {s.hem ? s.hem.value + " " + s.hem.units + " · " + new Date(s.hem.acquired_at).toLocaleString() : "Awaiting HEM raster"}</p>
                         <p className="border-t border-borderColor/60 mt-1 pt-1">
                           Alert: <strong style={{ color: color }}>{risk.label}</strong>
                         </p>

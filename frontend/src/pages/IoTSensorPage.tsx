@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Radio, RefreshCw, Activity, Cpu, Info, Zap, ShieldCheck } from "lucide-react";
+import { Radio, RefreshCw } from "lucide-react";
 import { useLiveTelemetry } from "../hooks/useLiveTelemetry";
 import { AlertsBanner } from "../components/AlertsBanner";
-import { TelemetryGraphs } from "../components/TelemetryGraphs";
-import { SensorCorrelationMatrix } from "../components/SensorCorrelationMatrix";
+import { AcquisitionPanel } from "../components/AcquisitionPanel";
 import { computeSensorRisk, summarizeRiskCounts } from "../lib/riskUtils";
 
 interface IoTSensorPageProps {
@@ -13,12 +12,10 @@ interface IoTSensorPageProps {
 export const IoTSensorPage: React.FC<IoTSensorPageProps> = ({ apiBaseUrl }) => {
   const { sensors, alerts, loading, refresh } = useLiveTelemetry(apiBaseUrl, 10000);
   const [selectedSensorId, setSelectedSensorId] = useState<string>("SN-ASM-GUA-01");
-  const [refreshCounter, setRefreshCounter] = useState<number>(0);
 
   const selectedSensor = sensors.find(s => s.id === selectedSensorId) || sensors[0] || null;
 
   const handleRefresh = () => {
-    setRefreshCounter(prev => prev + 1);
     refresh();
   };
 
@@ -64,7 +61,7 @@ export const IoTSensorPage: React.FC<IoTSensorPageProps> = ({ apiBaseUrl }) => {
                 IoT Sensor Grid & Telemetry
               </h2>
               <p className="text-[10px] text-textSecondary leading-snug mt-0.5">
-                {sensors.length} active IoT nodes across all 8 NER states — MEMS inclinometers, piezometers, AWS rain gauges, and VWC probes
+                {sensors.length} monitoring points with stored weather-model readings across Northeast India
               </p>
             </div>
           </div>
@@ -149,7 +146,6 @@ export const IoTSensorPage: React.FC<IoTSensorPageProps> = ({ apiBaseUrl }) => {
               { label: "48h Rain", value: `${selectedSensor.rain_48h_prior.toFixed(1)} mm`, color: "text-slate-600" },
               { label: "7d Rain", value: `${selectedSensor.rain_7d_prior.toFixed(1)} mm`, color: "text-slate-500" },
               { label: "API 7d", value: `${selectedSensor.api_7d.toFixed(1)} mm`, color: "text-purple-600" },
-              { label: "Rain Anomaly", value: `${selectedSensor.r24_seasonal_anom.toFixed(1)} mm`, color: selectedSensor.r24_seasonal_anom > 20 ? "text-alertOrange" : "text-textPrimary" },
               { label: "Node ID", value: selectedSensor.id, color: "text-textMuted font-mono text-[9px]" },
             ].map(({ label, value, color }) => (
               <div key={label} className="bg-bgPrimary border border-borderColor rounded-xl p-2.5 text-center">
@@ -161,121 +157,7 @@ export const IoTSensorPage: React.FC<IoTSensorPageProps> = ({ apiBaseUrl }) => {
         )}
       </div>
 
-      {/* 4 Calibrated Telemetry Charts */}
-      <div className="glass-panel rounded-2xl p-5 bg-bgCard border border-borderColor shadow-sm">
-        <div className="flex items-center justify-between mb-4 border-b border-borderColor pb-3">
-          <div className="flex items-center gap-2">
-            <span className="p-1.5 rounded-lg bg-blue-600/10 text-blue-600">
-              <Activity className="w-4 h-4" />
-            </span>
-            <div>
-              <h3 className="font-extrabold text-xs text-textPrimary uppercase">Real-Time In-Situ Sensor Telemetry</h3>
-              <p className="text-[9px] text-textSecondary">12-hour rolling time window • 15-minute sampling interval • Auto-refreshing</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-2 text-[9px] font-bold text-textMuted">
-            <div className="w-2 h-2 rounded-full bg-alertGreen animate-pulse" />
-            Live Feed Active
-          </div>
-        </div>
-
-        {selectedSensor ? (
-          <TelemetryGraphs selectedSensor={selectedSensor} refreshCounter={refreshCounter} />
-        ) : (
-          <div className="h-48 flex items-center justify-center text-textMuted font-bold text-sm">
-            Loading sensor data…
-          </div>
-        )}
-      </div>
-
-      {/* Sensor Calibration Reference Card */}
-      <div className="glass-panel rounded-2xl p-5 bg-bgCard border border-borderColor shadow-sm">
-        <div className="flex items-center gap-2 mb-4 border-b border-borderColor pb-2">
-          <span className="p-1.5 rounded-lg bg-amber-500/10 text-amber-600"><Zap className="w-4 h-4" /></span>
-          <div>
-            <h3 className="font-extrabold text-xs text-textPrimary uppercase">Geotechnical Sensor Calibration Reference</h3>
-            <p className="text-[9px] text-textSecondary">Bureau of Indian Standards (BIS) & IMD operational thresholds</p>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[
-            {
-              sensor: "MEMS Inclinometer",
-              unit: "°/hr surface drift",
-              zones: [
-                { label: "Normal", range: "< 0.02°/hr", color: "text-alertGreen bg-alertGreen/10 border-alertGreen/20" },
-                { label: "Warning", range: "0.04–0.06°/hr", color: "text-alertYellow bg-alertYellow/10 border-alertYellow/20" },
-                { label: "Alarm", range: "> 0.08°/hr", color: "text-alertRed bg-alertRed/10 border-alertRed/20 animate-pulse-slow" },
-              ]
-            },
-            {
-              sensor: "Piezometer",
-              unit: "kPa pore-water seepage",
-              zones: [
-                { label: "Baseline", range: "15–35 kPa", color: "text-alertGreen bg-alertGreen/10 border-alertGreen/20" },
-                { label: "Warning", range: "> 50 kPa", color: "text-alertYellow bg-alertYellow/10 border-alertYellow/20" },
-                { label: "Critical", range: "> 90 kPa", color: "text-alertRed bg-alertRed/10 border-alertRed/20" },
-              ]
-            },
-            {
-              sensor: "Soil VWC Probe",
-              unit: "% volumetric moisture",
-              zones: [
-                { label: "Dry", range: "< 30%", color: "text-alertGreen bg-alertGreen/10 border-alertGreen/20" },
-                { label: "Moist", range: "30–50%", color: "text-alertYellow bg-alertYellow/10 border-alertYellow/20" },
-                { label: "Saturated", range: "> 70%", color: "text-alertRed bg-alertRed/10 border-alertRed/20" },
-              ]
-            },
-            {
-              sensor: "AWS Rain Gauge",
-              unit: "mm 24h accumulation",
-              zones: [
-                { label: "Light", range: "< 40 mm", color: "text-alertGreen bg-alertGreen/10 border-alertGreen/20" },
-                { label: "Heavy", range: "40–100 mm", color: "text-alertYellow bg-alertYellow/10 border-alertYellow/20" },
-                { label: "Extreme", range: "> 100 mm", color: "text-alertRed bg-alertRed/10 border-alertRed/20" },
-              ]
-            },
-          ].map(({ sensor, unit, zones }) => (
-            <div key={sensor} className="p-3 bg-bgPrimary border border-borderColor rounded-xl space-y-2">
-              <div className="font-black text-[10px] text-textPrimary uppercase">{sensor}</div>
-              <div className="text-[8px] text-textMuted font-semibold italic mb-1">{unit}</div>
-              <div className="space-y-1">
-                {zones.map(z => (
-                  <div key={z.label} className={`px-2 py-1 rounded text-[8px] font-black border flex justify-between ${z.color}`}>
-                    <span>{z.label}</span>
-                    <span className="font-mono">{z.range}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Cross-Sensor Correlation Matrix */}
-      <div className="glass-panel rounded-2xl p-5 bg-bgCard border border-borderColor shadow-sm">
-        <div className="flex items-center gap-2 mb-4 border-b border-borderColor pb-2">
-          <span className="p-1.5 rounded-lg bg-purple-500/10 text-purple-500">
-            <Cpu className="w-4 h-4" />
-          </span>
-          <div>
-            <h3 className="font-extrabold text-xs text-textPrimary uppercase">In-Situ Sensor Correlation Matrix</h3>
-            <p className="text-[9px] text-textSecondary">Live Pearson-r cross-correlation analysis: Pore Pressure + Inclinometer + VWC + Rain24h</p>
-          </div>
-          <div className="ml-auto flex items-center gap-1.5 text-[9px] font-bold text-textMuted">
-            <Info className="w-3 h-3 text-blue-500" />
-            Simultaneous threshold breach = slope mobilization warning
-          </div>
-        </div>
-
-        {selectedSensor ? (
-          <SensorCorrelationMatrix sensors={sensors} selectedSensorId={selectedSensorId} />
-        ) : (
-          <div className="h-24 flex items-center justify-center text-textMuted font-bold text-sm">
-            Select a sensor station to compute correlations.
-          </div>
-        )}
-      </div>
+      <AcquisitionPanel stationId={selectedSensorId} />
     </div>
   );
 };
