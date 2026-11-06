@@ -20,7 +20,7 @@ redeploy. It already implements the MOSDAC endpoint too.
 It uses the supplied 14-channel checkpoint exported to ONNX (8 MB);
 `scripts/export_sentinel_onnx.py` verifies outputs against the original PyTorch model.
 Run `python -m unittest discover -s tests -v` from frontend to check the adapter.
-Runtime dependencies are pinned in frontend/requirements.txt for Python 3.12.
+Runtime dependencies are pinned in frontend/requirements.txt for Python 3.14.
 The function returns COMPLETE or FAILED in the same request, with inline PNGs,
 so no background worker or in-memory job persistence is required. The duration
 limit is 300 seconds; unavailable bands/cloud mask/terrain withhold inference.
@@ -30,3 +30,4 @@ ONNX parity is a packaging check, not scientific or field validation.
 District lookup uses administrative level 5. On upstream failure the UI loads
 132 reference districts across eight states, with visible source/date/limitations
 and ODbL attribution. Those coordinates are approximate bounding-box midpoints.
+
