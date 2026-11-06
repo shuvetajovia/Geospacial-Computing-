@@ -8,6 +8,11 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import httpx
 import numpy as np
+# The deployed Python runtime omits libexpat, which GDAL links dynamically.
+import ctypes
+_native_expat = Path(__file__).with_name('native') / 'libexpat.so.1'
+if _native_expat.exists():
+    ctypes.CDLL(str(_native_expat), mode=ctypes.RTLD_GLOBAL)
 from rasterio.io import MemoryFile
 import rasterio
 from rasterio.enums import Resampling
