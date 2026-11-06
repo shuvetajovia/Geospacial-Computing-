@@ -1,0 +1,685 @@
+{
+  "source": "OpenStreetMap via Vardhan Maps",
+  "source_revision": "2c829a3543171810a4b28162ea736fb76dfdef40",
+  "retrieved_on": "2026-11-06",
+  "license": "ODbL-1.0",
+  "coordinate_method": "boundary bounding-box midpoint; approximate, may lie outside irregular districts",
+  "states": {
+    "Arunachal Pradesh": [
+      {
+        "name": "Anjaw district",
+        "latitude": 28.155804,
+        "longitude": 96.835751
+      },
+      {
+        "name": "Bichom",
+        "latitude": 27.53866,
+        "longitude": 92.601099
+      },
+      {
+        "name": "Changlang",
+        "latitude": 27.269866,
+        "longitude": 96.396046
+      },
+      {
+        "name": "Dibang Valley",
+        "latitude": 28.828586,
+        "longitude": 95.944773
+      },
+      {
+        "name": "East Kameng",
+        "latitude": 27.5573,
+        "longitude": 92.915454
+      },
+      {
+        "name": "East Siang",
+        "latitude": 28.071609,
+        "longitude": 95.320041
+      },
+      {
+        "name": "Kamle",
+        "latitude": 27.732051,
+        "longitude": 94.108806
+      },
+      {
+        "name": "Keyi Panyor",
+        "latitude": 27.508331,
+        "longitude": 93.730214
+      },
+      {
+        "name": "Kra Daadi",
+        "latitude": 27.961163,
+        "longitude": 93.7024
+      },
+      {
+        "name": "Kurung Kumey",
+        "latitude": 27.98689,
+        "longitude": 93.133603
+      },
+      {
+        "name": "Lepa Rada",
+        "latitude": 27.917277,
+        "longitude": 94.715798
+      },
+      {
+        "name": "Lohit",
+        "latitude": 28.033267,
+        "longitude": 96.23457
+      },
+      {
+        "name": "Longding",
+        "latitude": 26.879132,
+        "longitude": 95.343242
+      },
+      {
+        "name": "Lower Dibang Valley",
+        "latitude": 28.209621,
+        "longitude": 95.886881
+      },
+      {
+        "name": "Lower Siang",
+        "latitude": 27.804141,
+        "longitude": 94.673994
+      },
+      {
+        "name": "Lower Subansiri",
+        "latitude": 27.607166,
+        "longitude": 93.863411
+      },
+      {
+        "name": "Namsai",
+        "latitude": 27.713755,
+        "longitude": 96.034756
+      },
+      {
+        "name": "Pakke-Kessang",
+        "latitude": 27.158054,
+        "longitude": 92.990995
+      },
+      {
+        "name": "Papum Pare",
+        "latitude": 27.286856,
+        "longitude": 93.717884
+      },
+      {
+        "name": "Shi Yomi",
+        "latitude": 28.681751,
+        "longitude": 94.234392
+      },
+      {
+        "name": "Siang",
+        "latitude": 28.476022,
+        "longitude": 94.84467
+      },
+      {
+        "name": "Tawang district",
+        "latitude": 27.668974,
+        "longitude": 92.0175
+      },
+      {
+        "name": "Tirap",
+        "latitude": 27.032212,
+        "longitude": 95.526348
+      },
+      {
+        "name": "Upper Siang",
+        "latitude": 28.730593,
+        "longitude": 94.84272
+      },
+      {
+        "name": "Upper Subansiri",
+        "latitude": 28.2582,
+        "longitude": 93.830727
+      },
+      {
+        "name": "West Kameng",
+        "latitude": 27.298661,
+        "longitude": 92.43296
+      },
+      {
+        "name": "West Siang",
+        "latitude": 28.198181,
+        "longitude": 94.653013
+      }
+    ],
+    "Assam": [
+      {
+        "name": "Bajali",
+        "latitude": 26.539632,
+        "longitude": 91.141484
+      },
+      {
+        "name": "Baksa",
+        "latitude": 26.627562,
+        "longitude": 91.198797
+      },
+      {
+        "name": "Barpeta",
+        "latitude": 26.345638,
+        "longitude": 90.965981
+      },
+      {
+        "name": "Biswanath",
+        "latitude": 26.794188,
+        "longitude": 93.416773
+      },
+      {
+        "name": "Bongaigaon",
+        "latitude": 26.34844,
+        "longitude": 90.625352
+      },
+      {
+        "name": "Cachar",
+        "latitude": 24.758386,
+        "longitude": 92.840125
+      },
+      {
+        "name": "Charaideo",
+        "latitude": 27.069787,
+        "longitude": 95.053164
+      },
+      {
+        "name": "Chirang",
+        "latitude": 26.645219,
+        "longitude": 90.649661
+      },
+      {
+        "name": "Darrang",
+        "latitude": 26.43434,
+        "longitude": 92.062058
+      },
+      {
+        "name": "Dhemaji",
+        "latitude": 27.594712,
+        "longitude": 94.863098
+      },
+      {
+        "name": "Dhubri",
+        "latitude": 26.132415,
+        "longitude": 90.090892
+      },
+      {
+        "name": "Dibrugarh",
+        "latitude": 27.40094,
+        "longitude": 95.024351
+      },
+      {
+        "name": "Dima Hasao",
+        "latitude": 25.40001,
+        "longitude": 92.997521
+      },
+      {
+        "name": "Goalpara",
+        "latitude": 26.049301,
+        "longitude": 90.606342
+      },
+      {
+        "name": "Golaghat",
+        "latitude": 26.368863,
+        "longitude": 93.732498
+      },
+      {
+        "name": "Hailakandi district",
+        "latitude": 24.50814,
+        "longitude": 92.599125
+      },
+      {
+        "name": "Hojai",
+        "latitude": 25.962898,
+        "longitude": 92.974291
+      },
+      {
+        "name": "Jorhat",
+        "latitude": 26.649889,
+        "longitude": 94.287736
+      },
+      {
+        "name": "Kamrup",
+        "latitude": 26.146331,
+        "longitude": 91.380039
+      },
+      {
+        "name": "Kamrup Metropolitan",
+        "latitude": 26.135158,
+        "longitude": 91.868194
+      },
+      {
+        "name": "Karbi Anglong",
+        "latitude": 26.071686,
+        "longitude": 93.345852
+      },
+      {
+        "name": "Karimganj",
+        "latitude": 24.582735,
+        "longitude": 92.400293
+      },
+      {
+        "name": "Kokrajhar",
+        "latitude": 26.490927,
+        "longitude": 90.13308
+      },
+      {
+        "name": "Lakhimpur",
+        "latitude": 27.177028,
+        "longitude": 94.162682
+      },
+      {
+        "name": "Majuli",
+        "latitude": 27.024282,
+        "longitude": 94.274724
+      },
+      {
+        "name": "Marigaon",
+        "latitude": 26.290164,
+        "longitude": 92.269753
+      },
+      {
+        "name": "Nagaon",
+        "latitude": 26.331047,
+        "longitude": 92.857676
+      },
+      {
+        "name": "Nalbari",
+        "latitude": 26.354072,
+        "longitude": 91.399491
+      },
+      {
+        "name": "Sivasagar",
+        "latitude": 26.994009,
+        "longitude": 94.670447
+      },
+      {
+        "name": "Sonitpur",
+        "latitude": 26.767833,
+        "longitude": 92.734645
+      },
+      {
+        "name": "South Salmara-Mankachar",
+        "latitude": 25.760533,
+        "longitude": 90.006298
+      },
+      {
+        "name": "Tamulpur",
+        "latitude": 26.642646,
+        "longitude": 91.604528
+      },
+      {
+        "name": "Tinsukia",
+        "latitude": 27.597197,
+        "longitude": 95.614829
+      },
+      {
+        "name": "Udalguri",
+        "latitude": 26.705333,
+        "longitude": 92.053538
+      },
+      {
+        "name": "West Karbi Anglong",
+        "latitude": 25.853295,
+        "longitude": 92.610368
+      }
+    ],
+    "Manipur": [
+      {
+        "name": "Bishnupur district",
+        "latitude": 24.52641,
+        "longitude": 93.80164
+      },
+      {
+        "name": "Chandel district",
+        "latitude": 24.170148,
+        "longitude": 93.997312
+      },
+      {
+        "name": "Churachandpur district",
+        "latitude": 24.309422,
+        "longitude": 93.61432
+      },
+      {
+        "name": "Imphal East",
+        "latitude": 24.832435,
+        "longitude": 94.017234
+      },
+      {
+        "name": "Imphal West",
+        "latitude": 24.757119,
+        "longitude": 93.861413
+      },
+      {
+        "name": "Jiribam district",
+        "latitude": 24.709715,
+        "longitude": 93.156427
+      },
+      {
+        "name": "Kakching district",
+        "latitude": 24.414685,
+        "longitude": 93.945803
+      },
+      {
+        "name": "Kamjong district",
+        "latitude": 24.798876,
+        "longitude": 94.433901
+      },
+      {
+        "name": "Kangpokpi district",
+        "latitude": 25.003768,
+        "longitude": 93.932455
+      },
+      {
+        "name": "Noney district",
+        "latitude": 24.778017,
+        "longitude": 93.452652
+      },
+      {
+        "name": "Pherzawl district",
+        "latitude": 24.371088,
+        "longitude": 93.234969
+      },
+      {
+        "name": "Senapati",
+        "latitude": 25.39194,
+        "longitude": 94.125283
+      },
+      {
+        "name": "Tamenglong district",
+        "latitude": 25.065579,
+        "longitude": 93.540827
+      },
+      {
+        "name": "Tengnoupal",
+        "latitude": 24.370872,
+        "longitude": 94.211653
+      },
+      {
+        "name": "Thoubal district",
+        "latitude": 24.620465,
+        "longitude": 94.013711
+      },
+      {
+        "name": "Ukhrul district",
+        "latitude": 25.312252,
+        "longitude": 94.428557
+      }
+    ],
+    "Meghalaya": [
+      {
+        "name": "East Garo Hills",
+        "latitude": 25.617788,
+        "longitude": 90.649398
+      },
+      {
+        "name": "East Jaintia Hills",
+        "latitude": 25.252071,
+        "longitude": 92.487089
+      },
+      {
+        "name": "East Khasi Hills",
+        "latitude": 25.402623,
+        "longitude": 91.75562
+      },
+      {
+        "name": "Eastern West Khasi Hills",
+        "latitude": 25.648754,
+        "longitude": 91.577868
+      },
+      {
+        "name": "North Garo Hills",
+        "latitude": 25.860623,
+        "longitude": 90.683959
+      },
+      {
+        "name": "Ri-Bhoi",
+        "latitude": 25.876012,
+        "longitude": 91.810947
+      },
+      {
+        "name": "South Garo Hills",
+        "latitude": 25.349326,
+        "longitude": 90.598377
+      },
+      {
+        "name": "South West Garo Hills",
+        "latitude": 25.443962,
+        "longitude": 89.992609
+      },
+      {
+        "name": "South West Khasi Hills",
+        "latitude": 25.330964,
+        "longitude": 91.209566
+      },
+      {
+        "name": "West Garo Hills",
+        "latitude": 25.606117,
+        "longitude": 90.164452
+      },
+      {
+        "name": "West Jaintia Hills",
+        "latitude": 25.442589,
+        "longitude": 92.322444
+      },
+      {
+        "name": "West Khasi Hills",
+        "latitude": 25.583033,
+        "longitude": 91.11346
+      }
+    ],
+    "Mizoram": [
+      {
+        "name": "Aizawl",
+        "latitude": 23.860634,
+        "longitude": 92.832391
+      },
+      {
+        "name": "Champhai district",
+        "latitude": 23.544285,
+        "longitude": 93.223932
+      },
+      {
+        "name": "Hnahthial",
+        "latitude": 22.966637,
+        "longitude": 93.009045
+      },
+      {
+        "name": "Khawzawl",
+        "latitude": 23.488076,
+        "longitude": 93.142873
+      },
+      {
+        "name": "Kolasib",
+        "latitude": 24.190611,
+        "longitude": 92.714052
+      },
+      {
+        "name": "Lawngtlai",
+        "latitude": 22.391351,
+        "longitude": 92.822425
+      },
+      {
+        "name": "Lunglei",
+        "latitude": 22.95198,
+        "longitude": 92.648087
+      },
+      {
+        "name": "Mamit",
+        "latitude": 23.75662,
+        "longitude": 92.467643
+      },
+      {
+        "name": "Saiha",
+        "latitude": 22.286875,
+        "longitude": 93.011332
+      },
+      {
+        "name": "Saitual",
+        "latitude": 23.81171,
+        "longitude": 93.028165
+      },
+      {
+        "name": "Serchhip",
+        "latitude": 23.305644,
+        "longitude": 92.931555
+      }
+    ],
+    "Nagaland": [
+      {
+        "name": "Ch\u00fcmoukedima",
+        "latitude": 25.808645,
+        "longitude": 93.773743
+      },
+      {
+        "name": "Dimapur",
+        "latitude": 25.904146,
+        "longitude": 93.733169
+      },
+      {
+        "name": "Kiphire",
+        "latitude": 25.81221,
+        "longitude": 94.809608
+      },
+      {
+        "name": "Kohima",
+        "latitude": 25.716962,
+        "longitude": 94.088804
+      },
+      {
+        "name": "Longleng",
+        "latitude": 26.583799,
+        "longitude": 94.792936
+      },
+      {
+        "name": "Meluri district",
+        "latitude": 25.619037,
+        "longitude": 94.72495
+      },
+      {
+        "name": "Mokokchung",
+        "latitude": 26.479629,
+        "longitude": 94.523599
+      },
+      {
+        "name": "Mon",
+        "latitude": 26.662242,
+        "longitude": 95.010957
+      },
+      {
+        "name": "Niuland",
+        "latitude": 25.850793,
+        "longitude": 93.909287
+      },
+      {
+        "name": "Noklak",
+        "latitude": 26.112052,
+        "longitude": 95.028037
+      },
+      {
+        "name": "Peren",
+        "latitude": 25.449825,
+        "longitude": 93.633575
+      },
+      {
+        "name": "Phek",
+        "latitude": 25.669953,
+        "longitude": 94.38597
+      },
+      {
+        "name": "Shamator",
+        "latitude": 26.090843,
+        "longitude": 94.864919
+      },
+      {
+        "name": "Tseminy\u00fc",
+        "latitude": 25.941194,
+        "longitude": 94.13287
+      },
+      {
+        "name": "Tuensang",
+        "latitude": 26.234275,
+        "longitude": 94.750519
+      },
+      {
+        "name": "Wokha",
+        "latitude": 26.241722,
+        "longitude": 94.170545
+      },
+      {
+        "name": "Z\u00fcnheboto",
+        "latitude": 26.012413,
+        "longitude": 94.462504
+      }
+    ],
+    "Sikkim": [
+      {
+        "name": "Gangtok",
+        "latitude": 27.325711,
+        "longitude": 88.679972
+      },
+      {
+        "name": "Gyalshing",
+        "latitude": 27.418769,
+        "longitude": 88.194533
+      },
+      {
+        "name": "Mangan",
+        "latitude": 27.749735,
+        "longitude": 88.50031
+      },
+      {
+        "name": "Namchi",
+        "latitude": 27.303214,
+        "longitude": 88.404768
+      },
+      {
+        "name": "Pakyong",
+        "latitude": 27.228997,
+        "longitude": 88.700224
+      },
+      {
+        "name": "Soreng",
+        "latitude": 27.19,
+        "longitude": 88.17104
+      }
+    ],
+    "Tripura": [
+      {
+        "name": "Dhalai",
+        "latitude": 23.823717,
+        "longitude": 91.962856
+      },
+      {
+        "name": "Gomati",
+        "latitude": 23.427697,
+        "longitude": 91.609777
+      },
+      {
+        "name": "Khowai",
+        "latitude": 23.956298,
+        "longitude": 91.628669
+      },
+      {
+        "name": "North Tripura",
+        "latitude": 24.092428,
+        "longitude": 92.199224
+      },
+      {
+        "name": "Sipahijala",
+        "latitude": 23.531292,
+        "longitude": 91.358267
+      },
+      {
+        "name": "South Tripura",
+        "latitude": 23.171095,
+        "longitude": 91.567914
+      },
+      {
+        "name": "Unakoti",
+        "latitude": 24.191035,
+        "longitude": 92.056132
+      },
+      {
+        "name": "West Tripura",
+        "latitude": 23.914431,
+        "longitude": 91.391855
+      }
+    ]
+  }
+}

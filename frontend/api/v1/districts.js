@@ -1,5 +1,5 @@
 const states = new Map(Object.entries({ 'Arunachal Pradesh': 'IN-AR', Assam: 'IN-AS', Manipur: 'IN-MN', Meghalaya: 'IN-ML', Mizoram: 'IN-MZ', Nagaland: 'IN-NL', Sikkim: 'IN-SK', Tripura: 'IN-TR' }));
-const providers = ['https://overpass.private.coffee/api/interpreter', 'https://overpass-api.de/api/interpreter'];
+const providers = ['https://maps.mail.ru/osm/tools/overpass/api/interpreter', 'https://overpass.private.coffee/api/interpreter'];
 
 export default async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   }
   const state = req.query?.state;
   if (!states.has(state)) return res.status(400).json({ detail: 'Select a supported Northeast state.' });
-  const query = `[out:json][timeout:20];area["ISO3166-2"="${states.get(state)}"]->.state;relation(area.state)["boundary"="administrative"]["admin_level"="6"];out center tags;`;
+  const query = `[out:json][timeout:20];area["ISO3166-2"="${states.get(state)}"]->.state;relation(area.state)["boundary"="administrative"]["admin_level"="5"];out center tags;`;
   for (const provider of providers) {
     try {
       const response = await fetch(provider, {
