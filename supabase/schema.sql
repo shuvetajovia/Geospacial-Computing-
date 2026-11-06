@@ -323,11 +323,12 @@ VALUES
 ('SN-ASM-KA-01','Karbi Anglong Remote Hamlets',26.0000,93.5000,35.4,38.5,52.4,71.2,185.4,128.6,8.5,22.4),
 ('SN-ASM-RRL-01','Lumding-Badarpur Hill Railway Cut',25.2000,93.1500,62.4,105.8,135.2,168.4,412.5,295.8,52.4,105.6),
 
--- MEGHALAYA (4 nodes)
-('SN-MEG-SHI-01','Shillong Urban Municipal Cuts (East Khasi)',25.5788,91.8933,44.5,65.2,88.4,115.2,285.4,198.6,22.5,48.2),
-('SN-MEG-TUR-01','Tura Town Slopes (West Garo Hills)',25.5194,90.2131,38.8,48.5,65.2,88.4,218.5,152.4,14.5,32.8),
-('SN-MEG-CHE-01','Cherrapunji Terraced Valleys (Sohra)',25.2700,91.7200,68.5,148.5,185.4,228.4,548.6,385.4,85.4,168.5),
-('SN-MEG-MAW-01','Mawsynram Tribal Hamlets',25.2956,91.5823,65.2,138.4,172.5,218.6,525.8,368.4,78.4,155.2),
+-- MEGHALAYA (5 nodes)
+('SN-MEG-SHI-01','Shillong Urban Municipal Cuts (East Khasi)',25.5788,91.8933,35.9,0.4,0.5,1.0,23.6,9.93,-9.6,-12.07),
+('SN-MEG-TUR-01','Tura Town Slopes (West Garo Hills)',25.5194,90.2131,34.5,0.0,0.0,0.0,5.7,2.04,-7.0,-12.96),
+('SN-MEG-CHE-01','Cherrapunji Terraced Valleys (Sohra)',25.2700,91.7200,37.1,0.0,0.0,0.3,8.7,4.18,-15.0,-30.82),
+('SN-MEG-MAW-01','Mawsynram Tribal Hamlets',25.2956,91.5823,37.1,0.0,0.0,0.7,7.4,3.60,-14.0,-28.40),
+('SN-MEG-EKH-01','East Khasi Hills Connectors',25.4200,91.9000,34.2,0.0,0.0,0.3,11.4,5.14,-8.5,-12.86),
 
 -- SIKKIM (5 nodes)
 ('SN-SKM-GAN-01','Gangtok City Slopes (East Sikkim)',27.3389,88.6065,52.4,85.4,112.8,145.2,352.8,248.4,42.5,88.2),

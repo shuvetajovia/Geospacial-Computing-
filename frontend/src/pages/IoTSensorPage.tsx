@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Radio, RefreshCw } from "lucide-react";
+import { Radio, RefreshCw, BarChart3 } from "lucide-react";
 import { useLiveTelemetry } from "../hooks/useLiveTelemetry";
 import { AlertsBanner } from "../components/AlertsBanner";
 import { AcquisitionPanel } from "../components/AcquisitionPanel";
+import { TelemetryGraphs } from "../components/TelemetryGraphs";
 import { computeSensorRisk, summarizeRiskCounts } from "../lib/riskUtils";
 
 interface IoTSensorPageProps {
@@ -12,11 +13,13 @@ interface IoTSensorPageProps {
 export const IoTSensorPage: React.FC<IoTSensorPageProps> = ({ apiBaseUrl }) => {
   const { sensors, alerts, loading, refresh } = useLiveTelemetry(apiBaseUrl, 10000);
   const [selectedSensorId, setSelectedSensorId] = useState<string>("SN-ASM-GUA-01");
+  const [graphRefreshCounter, setGraphRefreshCounter] = useState<number>(0);
 
   const selectedSensor = sensors.find(s => s.id === selectedSensorId) || sensors[0] || null;
 
   const handleRefresh = () => {
     refresh();
+    setGraphRefreshCounter(c => c + 1);
   };
 
   // Network-wide risk breakdown
@@ -140,6 +143,29 @@ export const IoTSensorPage: React.FC<IoTSensorPageProps> = ({ apiBaseUrl }) => {
       </div>
 
       <AcquisitionPanel stationId={selectedSensorId} />
+
+      {/* ── Telemetry Stream Graphs ── */}
+      {selectedSensor && (
+        <div className="glass-panel rounded-2xl p-5 bg-bgCard border border-borderColor shadow-sm space-y-3">
+          <div className="flex items-center gap-2 border-b border-borderColor pb-3">
+            <div className="p-2 rounded-xl bg-blue-600/10 text-blue-600 shrink-0">
+              <BarChart3 className="w-4 h-4" />
+            </div>
+            <div>
+              <h3 className="text-xs font-extrabold text-textPrimary uppercase tracking-tight">
+                Real-Time Telemetry Stream
+              </h3>
+              <p className="text-[10px] text-textSecondary">
+                12-hour reconstructed in-situ sensor feed — inclinometer · piezometer · VWC · rain gauge
+              </p>
+            </div>
+          </div>
+          <TelemetryGraphs
+            selectedSensor={selectedSensor}
+            refreshCounter={graphRefreshCounter}
+          />
+        </div>
+      )}
     </div>
   );
 };

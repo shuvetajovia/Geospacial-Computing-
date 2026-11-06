@@ -17,10 +17,25 @@ let latest: Snapshot = packaged;
 let pending: Promise<Snapshot> | undefined;
 let nextCheck = 0;
 
+// A station's weather is stale when its timestamp is older than 6 hours.
+// This is distinct from the network-level status string, which may say
+// "Partial" even when every individual station record was successfully
+// fetched and is current.
+const STALE_MS = 6 * 60 * 60 * 1000; // 6 hours
+
 function usableWeather(point?: PointLayers) {
   const w = point?.weather;
   return w && Number.isFinite(Date.parse(w.last_updated)) &&
     [w.soil_moisture,w.rain_24h_obs,w.rain_48h_prior,w.rain_72h_prior,w.rain_7d_prior,w.api_7d].every(Number.isFinite);
+}
+
+/** True only when the weather record for this specific station is genuinely
+ *  stale (older than 6 h) — not because the network request had a partial
+ *  error message on a different station. */
+function isStaleWeather(w?: PointLayers["weather"]): boolean {
+  if (!w) return true;
+  const age = Date.now() - Date.parse(w.last_updated);
+  return !Number.isFinite(age) || age > STALE_MS;
 }
 
 export function readPointSnapshot(): Promise<Snapshot> {
@@ -34,16 +49,18 @@ export function readPointSnapshot(): Promise<Snapshot> {
         const data = await response.json();
         if (data?.points && Date.parse(data.checked_at) >= Date.parse(latest.checked_at)) fetched = data;
       }
-    } catch { /* Use the saved record for each station below. */ }
+    } catch { /* network unavailable — keep last good record */ }
     const points: Snapshot["points"] = {};
     for (const {id} of stations) {
       const old = latest.points[id] || packaged.points[id] || {};
       const fresh = fetched?.points[id];
       const accept = usableWeather(fresh) && (!usableWeather(old) ||
         Date.parse(fresh!.weather!.last_updated) >= Date.parse(old.weather!.last_updated));
-      points[id] = {...old, ...fresh, weather:accept ? fresh!.weather : old.weather,
-        weatherFallback:!accept || (fresh?.weatherFallback ??
-          (fetched?.status?.weather?.startsWith("Partial") && fresh?.weather?.last_updated === old.weather?.last_updated))};
+      const chosenWeather = accept ? fresh!.weather : old.weather;
+      // Only mark as fallback if the chosen record is actually stale (>6 h old).
+      // A "Partial" network status does NOT make fresh per-station data a fallback.
+      const isFallback = isStaleWeather(chosenWeather);
+      points[id] = {...old, ...fresh, weather: chosenWeather, weatherFallback: isFallback};
     }
     latest = {...(fetched || latest), points};
     nextCheck = Date.now() + (fetched ? 300000 : 60000);

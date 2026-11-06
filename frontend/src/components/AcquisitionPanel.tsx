@@ -27,13 +27,22 @@ export function AcquisitionPanel({ stationId }: { stationId?: string }) {
   }
   const age=(s:string)=>Date.now()-Date.parse(s)>3*3600000 ? " · older than 3 hours" : "";
   const time=(s:string)=>new Date(s).toLocaleString("en-IN",{timeZone:"Asia/Kolkata"})+" IST";
+
+  // Fallback badge: only show when weather record is genuinely stale (>6 h old).
+  // A network-level "Partial" error on other stations is not a fallback for this station.
+  const weatherAgeMs = p?.weather ? Date.now() - Date.parse(p.weather.last_updated) : Infinity;
+  const isGenuineFallback = p?.weatherFallback === true && weatherAgeMs > 6 * 3600 * 1000;
+  const weatherBadge = isGenuineFallback
+    ? " · ⚠ Cached (>" + Math.round(weatherAgeMs / 3600000) + " h old)"
+    : "";
+
   return <section className="rounded-2xl border border-borderColor bg-bgCard p-5 space-y-3 text-xs text-textSecondary">
     <h2 className="font-bold text-textPrimary">{stationId ? NER_STATIONS.find(s=>s.id===stationId)?.name : "Point acquisition workflow"}</h2>
     {!stationId && <p>Acquire rainfall and soil moisture → sample the satellite rainfall grid → screen a point with Sentinel‑2 → retain the newest successful record from each source.</p>}
     {!stationId && <label>Monitoring point <select value={id} onChange={e=>setId(e.target.value)} className="block w-full rounded border border-borderColor bg-bgPrimary p-2">{NER_STATIONS.map(s=><option key={s.id} value={s.id}>{s.name}</option>)}</select></label>}
     {error && <p>{error}</p>}
     <p>{data ? 'Last acquisition attempt '+time(data.checked_at) : 'Loading acquisition record…'}</p>
-    <p><strong>Weather model · Open-Meteo{p?.weatherFallback ? " · Saved fallback" : ""}</strong><br/>{p?.weather ? p.weather.rain_24h_obs+' mm in 24 h · '+p.weather.soil_moisture+'% surface soil moisture (0–1 cm) · '+time(p.weather.last_updated)+age(p.weather.last_updated) : 'Awaiting a complete weather record.'}</p>
+    <p><strong>Weather model · Open-Meteo{weatherBadge}</strong><br/>{p?.weather ? p.weather.rain_24h_obs+' mm in 24 h · '+p.weather.soil_moisture+'% surface soil moisture (0–1 cm) · '+time(p.weather.last_updated)+age(p.weather.last_updated) : 'Awaiting a complete weather record.'}</p>
     {p?.weather && <p>48 h rainfall {p.weather.rain_48h_prior} mm · 7 d rainfall {p.weather.rain_7d_prior} mm · Antecedent precipitation index {p.weather.api_7d} mm</p>}
     <p><strong>Satellite rainfall · UCI PERSIANN</strong><br/>{p?.persiann ? p.persiann.value+" mm in 24 h · "+p.persiann.period_start.slice(0,10)+" UTC · 0.25° grid" : "Awaiting a valid rainfall pixel."} <a className="underline" href="https://persiann.eng.uci.edu/CHRSdata/PERSIANN/daily/">Source archive</a></p>
     <p><strong>Additional satellite source · MOSDAC HEM</strong><br/>{p?.hem ? p.hem.value+' '+p.hem.units+' · '+time(p.hem.acquired_at) : data?.status.hem || 'Awaiting acquisition'}</p>
