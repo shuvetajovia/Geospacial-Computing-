@@ -1,3 +1,4 @@
+import { AcquisitionPanel } from "../components/AcquisitionPanel";
 import React, { useState, useEffect } from "react";
 import { 
   Layers, Sliders, Database, Eye, CheckCircle2, ChevronRight, BarChart3, Radio, RefreshCw, Filter, X, Shield, AlertTriangle, Home, Users, Satellite, ChevronDown, ChevronUp, XCircle, Trash2, ShieldCheck, RotateCcw
@@ -842,32 +843,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ apiBaseUrl, onNavigateToRo
                   </p>
                 </div>
 
-                {/* 3. Hydrological metrics */}
-                <div className="p-4 bg-bgCard rounded-2xl border border-borderColor text-xs space-y-2.5 shadow-sm">
-                  <div className="text-[10px] text-textMuted font-black uppercase tracking-wider border-b border-borderColor pb-1.5 flex items-center justify-between">
-                    <span>Hydrological Metrics (In-Situ)</span>
-                    <span className="text-emerald-600 font-bold">Telemetry Live</span>
-                  </div>
-                  
-                  <div className="grid grid-cols-2 gap-3 text-textSecondary font-semibold">
-                    <div className="p-2 bg-bgPrimary rounded-xl border border-borderColor">
-                      <div className="text-[9px] text-textMuted uppercase font-bold">24h Rain Gauge</div>
-                      <div className="text-xs font-black text-textPrimary">{selectedSegmentDetail.telemetry.rain_24h_obs.toFixed(1)} mm</div>
-                    </div>
-                    <div className="p-2 bg-bgPrimary rounded-xl border border-borderColor">
-                      <div className="text-[9px] text-textMuted uppercase font-bold">7-Day API Index</div>
-                      <div className="text-xs font-black text-textPrimary">{selectedSegmentDetail.telemetry.api_7d.toFixed(1)} mm</div>
-                    </div>
-                    <div className="p-2 bg-bgPrimary rounded-xl border border-borderColor">
-                      <div className="text-[9px] text-textMuted uppercase font-bold">Soil Moisture VWC</div>
-                      <div className="text-xs font-black text-blue-600 dark:text-blue-400">{selectedSegmentDetail.telemetry.soil_moisture.toFixed(1)}%</div>
-                    </div>
-                    <div className="p-2 bg-bgPrimary rounded-xl border border-borderColor">
-                      <div className="text-[9px] text-textMuted uppercase font-bold">Seasonal Anomaly</div>
-                      <div className="text-xs font-black text-textPrimary">Unavailable</div>
-                    </div>
-                  </div>
-                </div>
+                <AcquisitionPanel stationId={selectedSegmentDetail.sensor_node} />
 
                 {/* 4. SHAP Explainer */}
                 <div className="space-y-2.5">
@@ -903,45 +879,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ apiBaseUrl, onNavigateToRo
             )}
 
             {/* Modal Content - Sensor Node details */}
-            {selectedSensorDetail && (
-              <div className="space-y-4">
-                <div className="p-4 bg-bgPrimary border border-borderColor rounded-2xl text-xs space-y-2 font-semibold text-textSecondary">
-                  <div className="text-[9px] font-black uppercase text-textMuted border-b border-borderColor pb-1">Sensor Ingest Readouts</div>
-                  <div className="flex justify-between">
-                    <span>Soil Volumetric Water (VWC %):</span>
-                    <span className="text-blue-600 font-bold">{selectedSensorDetail.soil_moisture.toFixed(1)}%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>24h Rain Accumulation:</span>
-                    <span className="text-textPrimary font-bold">{selectedSensorDetail.rain_24h_obs.toFixed(1)} mm</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>48h Prior Rain:</span>
-                    <span className="text-textPrimary font-bold">{selectedSensorDetail.rain_48h_prior.toFixed(1)} mm</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>7-Day Prior Accumulation:</span>
-                    <span className="text-textPrimary font-bold">{selectedSensorDetail.rain_7d_prior.toFixed(1)} mm</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>7d API Index:</span>
-                    <span className="text-textPrimary font-bold">{selectedSensorDetail.api_7d.toFixed(1)} mm</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Precipitation Seasonal Anomaly:</span>
-                    <span className="text-alertOrange font-bold">Unavailable</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>API Seasonal Anomaly Z-score:</span>
-                    <span className="text-textPrimary font-bold">Unavailable</span>
-                  </div>
-                </div>
-
-                <div className="p-3 bg-blue-500/5 border border-blue-500/15 rounded-2xl text-[11px] font-semibold leading-relaxed text-textSecondary">
-                  💡 This IoT weather station logs meteorological and sub-surface moisture anomalies continuously. Readouts are ingested every 15 minutes by the two-tier AI predictor to compute dynamic slope trigger probabilities.
-                </div>
-              </div>
-            )}
+            {selectedSensorDetail && <AcquisitionPanel stationId={selectedSensorDetail.id} />}
 
             {/* Modal Footer */}
             <button

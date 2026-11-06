@@ -137,24 +137,6 @@ export const IoTSensorPage: React.FC<IoTSensorPageProps> = ({ apiBaseUrl }) => {
           </div>
         </div>
 
-        {/* Selected Station Summary Bar */}
-        {selectedSensor && (
-          <div className="mt-4 pt-4 border-t border-borderColor grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
-            {[
-              { label: "Soil VWC", value: `${selectedSensor.soil_moisture.toFixed(1)}%`, color: "text-blue-600" },
-              { label: "24h Rain", value: `${selectedSensor.rain_24h_obs.toFixed(1)} mm`, color: "text-indigo-600" },
-              { label: "48h Rain", value: `${selectedSensor.rain_48h_prior.toFixed(1)} mm`, color: "text-slate-600" },
-              { label: "7d Rain", value: `${selectedSensor.rain_7d_prior.toFixed(1)} mm`, color: "text-slate-500" },
-              { label: "API 7d", value: `${selectedSensor.api_7d.toFixed(1)} mm`, color: "text-purple-600" },
-              { label: "Node ID", value: selectedSensor.id, color: "text-textMuted font-mono text-[9px]" },
-            ].map(({ label, value, color }) => (
-              <div key={label} className="bg-bgPrimary border border-borderColor rounded-xl p-2.5 text-center">
-                <div className="text-[8px] font-bold text-textMuted uppercase mb-0.5">{label}</div>
-                <div className={`text-xs font-black ${color}`}>{value}</div>
-              </div>
-            ))}
-          </div>
-        )}
       </div>
 
       <AcquisitionPanel stationId={selectedSensorId} />

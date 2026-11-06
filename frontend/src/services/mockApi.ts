@@ -1197,7 +1197,7 @@ export const mockApi = {
         alert_level: foundSection.status === "BLOCKED" ? "Critical" : foundSection.status === "CAUTION" ? "Warning" : "Operational",
         alert_color: foundSection.status === "BLOCKED" ? "red" : foundSection.status === "CAUTION" ? "yellow" : "green"
       },
-      sensor_node: sensor.id,
+      sensor_node: foundSection.sensor_node_id,
       sensor_name: sensor.name,
       shap_values: shap,
       telemetry: {

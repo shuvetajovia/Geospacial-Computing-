@@ -3,6 +3,7 @@ import stations from "./stations.json";
 export interface StationCoordinate { id: string; name: string; latitude: number; longitude: number }
 export const NER_STATIONS: StationCoordinate[] = stations;
 export type PointLayers = {
+  weatherFallback?: boolean;
   weather?: Pick<SensorNodeData, "last_updated" | "soil_moisture" | "rain_24h_obs" | "rain_48h_prior" | "rain_72h_prior" | "rain_7d_prior" | "api_7d">;
   persiann?: {period_start:string; value:number; units:string; file:string};
   hem?: {value: number; units: string; acquired_at: string; filename: string};
@@ -10,34 +11,52 @@ export type PointLayers = {
   screen_status?: string;
 };
 type Snapshot = { checked_at: string; status: {hem: string; weather: string}; points: Record<string, PointLayers> };
-let latest: Snapshot | undefined;
+declare const __PACKAGED_POINT_SNAPSHOT__: Snapshot;
+const packaged = __PACKAGED_POINT_SNAPSHOT__;
+let latest: Snapshot = packaged;
 let pending: Promise<Snapshot> | undefined;
 let nextCheck = 0;
-export async function readPointSnapshot(): Promise<Snapshot> {
-  if (latest && Date.now() < nextCheck) return latest;
+
+function usableWeather(point?: PointLayers) {
+  const w = point?.weather;
+  return w && Number.isFinite(Date.parse(w.last_updated)) &&
+    [w.soil_moisture,w.rain_24h_obs,w.rain_48h_prior,w.rain_72h_prior,w.rain_7d_prior,w.api_7d].every(Number.isFinite);
+}
+
+export function readPointSnapshot(): Promise<Snapshot> {
+  if (Date.now() < nextCheck) return Promise.resolve(latest);
   if (pending) return pending;
   pending = (async () => {
-    for (const url of ["https://raw.githubusercontent.com/shuvetajovia/Geospacial-Computing-/main/frontend/public/point-snapshot.json", import.meta.env.BASE_URL + "point-snapshot.json"]) {
-      try {
-        const response = await fetch(url, {signal: AbortSignal.timeout(8000)});
-        if (!response.ok) continue;
-        const value: Snapshot = await response.json();
-        if (!value.points || !Number.isFinite(Date.parse(value.checked_at))) continue;
-        if (!latest || Date.parse(value.checked_at) >= Date.parse(latest.checked_at)) latest = value;
-        nextCheck = Date.now() + 300000;
-        return latest;
-      } catch { /* Try the deployed snapshot. */ }
+    let fetched: Snapshot | undefined;
+    try {
+      const response = await fetch("https://raw.githubusercontent.com/shuvetajovia/Geospacial-Computing-/main/frontend/public/point-snapshot.json", {signal: AbortSignal.timeout(8000), cache:"no-store"});
+      if (response.ok) {
+        const data = await response.json();
+        if (data?.points && Date.parse(data.checked_at) >= Date.parse(latest.checked_at)) fetched = data;
+      }
+    } catch { /* Use the saved record for each station below. */ }
+    const points: Snapshot["points"] = {};
+    for (const {id} of stations) {
+      const old = latest.points[id] || packaged.points[id] || {};
+      const fresh = fetched?.points[id];
+      const accept = usableWeather(fresh) && (!usableWeather(old) ||
+        Date.parse(fresh!.weather!.last_updated) >= Date.parse(old.weather!.last_updated));
+      points[id] = {...old, ...fresh, weather:accept ? fresh!.weather : old.weather,
+        weatherFallback:!accept || (fresh?.weatherFallback ??
+          (fetched?.status?.weather?.startsWith("Partial") && fresh?.weather?.last_updated === old.weather?.last_updated))};
     }
-    if (latest) return latest;
-    throw new Error("Point acquisition snapshot unavailable");
+    latest = {...(fetched || latest), points};
+    nextCheck = Date.now() + (fetched ? 300000 : 60000);
+    return latest;
   })().finally(() => { pending = undefined; });
   return pending;
 }
+
 export async function fetchLiveMeteorologicalTelemetry(): Promise<SensorNodeData[]> {
   const snapshot = await readPointSnapshot();
   return stations.flatMap(site => {
     const point = snapshot.points[site.id];
     if (!point?.weather) return [];
-    return [{...site, ...point.weather, sentinel:point.sentinel, hem:point.hem, persiann:point.persiann, r24_seasonal_anom: NaN, api_seasonal_anom: NaN}];
+    return [{...site, ...point.weather, weatherFallback:point.weatherFallback, sentinel:point.sentinel, hem:point.hem, persiann:point.persiann, r24_seasonal_anom: NaN, api_seasonal_anom: NaN}];
   });
 }

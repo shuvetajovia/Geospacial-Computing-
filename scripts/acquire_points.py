@@ -58,6 +58,7 @@ def weather(batch, rows):
             rain_72h_prior=round(sum(rain[-72:]),2), rain_7d_prior=round(sum(rain),2),
             api_7d=round(sum(p*0.84**(i//24) for i,p in enumerate(reversed(rain))),2))
         keep(rows[site['id']], 'weather', value, 'last_updated')
+        rows[site['id']]['weatherFallback'] = False
 
 
 def raster(rows):
@@ -103,7 +104,7 @@ def raster(rows):
 def main():
     snapshot = json.loads(OUTPUT.read_text()) if OUTPUT.exists() else {'points':{}}
     rows = snapshot['points']
-    for site in STATIONS: rows.setdefault(site['id'],{})
+    for site in STATIONS: rows.setdefault(site['id'],{})['weatherFallback'] = True
     status = {}
     for i in range(0,len(STATIONS),10):
         try: weather(STATIONS[i:i+10],rows)
