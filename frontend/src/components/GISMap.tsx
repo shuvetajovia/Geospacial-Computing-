@@ -474,7 +474,15 @@ export const GISMap: React.FC<GISMapProps> = ({
                       </div>
                       <div className="text-[10px] space-y-0.5 mt-1 font-bold text-textSecondary">
                         <p>ID: <strong className="font-mono text-textPrimary">{s.id}</strong></p>
-                        <p>Open-Meteo weather model{s.weatherFallback ? " · Saved fallback" : ""} · {new Date(s.last_updated).toLocaleString()}</p><p>Surface soil moisture: <strong className="text-blue-600">{s.soil_moisture.toFixed(1)}%</strong></p>
+                        {(() => {
+                          const ageMs = Date.now() - Date.parse(s.last_updated);
+                          const isStale = s.weatherFallback && ageMs > 6 * 3600 * 1000;
+                          const badge = isStale ? ` · ⚠ Cached (>${Math.round(ageMs / 3600000)}h old)` : "";
+                          return (
+                            <p>Open-Meteo weather model{badge} · {new Date(s.last_updated).toLocaleString()}</p>
+                          );
+                        })()}
+                        <p>Surface soil moisture: <strong className="text-blue-600">{s.soil_moisture.toFixed(1)}%</strong></p>
                         <p>24h Rain Accumulation: <strong className="text-indigo-600">{s.rain_24h_obs.toFixed(1)} mm</strong></p>
                         <p>API 7d Index: <strong>{s.api_7d.toFixed(1)} mm</strong></p>
                         <p>Sentinel screening: {s.sentinel ? s.sentinel.candidate_pct + "% candidate pixels · " + new Date(s.sentinel.acquired_at).toLocaleDateString() : "Awaiting scene"}</p>
