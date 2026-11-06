@@ -89,7 +89,7 @@ export const SARInspector: React.FC<SARInspectorProps> = ({ apiBaseUrl, initialL
   };
 
   const result = job?.result;
-  const imageUrl = (path: string) => `${apiBaseUrl}${path}?v=${job?.job_id}`;
+  const imageUrl = (path: string) => path.startsWith('data:image/png;base64,') ? path : `${apiBaseUrl}${path}?v=${job?.job_id}`;
 
   return (
     <div className="fixed inset-0 z-[99999] flex items-center justify-center overflow-y-auto bg-black/75 p-3 backdrop-blur-sm">
@@ -113,7 +113,7 @@ export const SARInspector: React.FC<SARInspectorProps> = ({ apiBaseUrl, initialL
             </button>
           </div>
 
-          {busy && <div className="flex items-center gap-3 rounded-xl border border-blue-500/20 bg-blue-500/5 p-3 text-xs font-semibold text-textSecondary"><Loader2 className="h-4 w-4 animate-spin text-blue-500" /><div><strong className="block text-textPrimary">{job?.state || "QUEUED"}</strong>{job?.progress || "Connecting to the live Sentinel catalog…"}</div></div>}
+          {busy && <div className="flex items-center gap-3 rounded-xl border border-blue-500/20 bg-blue-500/5 p-3 text-xs font-semibold text-textSecondary"><Loader2 className="h-4 w-4 animate-spin text-blue-500" /><div><strong className="block text-textPrimary">{job?.state || "SCREENING"}</strong>{job?.progress || "Searching the catalog, reading satellite bands and running the model. This may take several minutes."}</div></div>}
 
           {error && <div className="flex gap-2 rounded-xl border border-alertOrange/30 bg-alertOrange/5 p-3 text-xs font-semibold text-textSecondary"><AlertTriangle className="h-4 w-4 shrink-0 text-alertOrange" /><span>{error}</span></div>}
 
@@ -124,7 +124,7 @@ export const SARInspector: React.FC<SARInspectorProps> = ({ apiBaseUrl, initialL
                   ["Acquired (UTC)", new Date(result.acquired_at).toLocaleString("en-GB", { timeZone: "UTC", timeZoneName: "short" })],
                   ["Tile cloud cover", `${Number(result.tile_cloud_pct).toFixed(1)}%`],
                   ["Candidate pixels", `${result.candidate_pct}% · ${result.candidate_pixels.toLocaleString()}`],
-                  ["Patch area", `${(result.patch_size_m / 1000).toFixed(2)} km²`],
+                  ["Patch area", `${((result.patch_size_m / 1000) ** 2).toFixed(2)} km²`],
                 ].map(([label, value]) => <div key={label} className="rounded-xl border border-borderColor bg-bgPrimary p-3"><div className="text-[9px] font-black uppercase text-textMuted">{label}</div><div className="mt-1 text-sm font-bold text-textPrimary">{value}</div></div>)}
               </div>
 

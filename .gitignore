@@ -44,3 +44,6 @@ dist-ssr/
 *.swo
 .DS_Store
 Thumbs.db
+
+# Local ONNX export dependencies
+.build-tools/
