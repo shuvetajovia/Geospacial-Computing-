@@ -1,4 +1,4 @@
-"""Synchronous Vercel adapter of backend Sentinel pipeline; verified ONNX checkpoint.
+"""Synchronous Vercel adapter of backend Sentinel pipeline; verified NumPy checkpoint.
 No background jobs or per-instance image storage.
 """
 import base64
@@ -62,10 +62,8 @@ def normalize(channels):
 def model():
     global MODEL
     if MODEL is None:
-        import onnxruntime as ort
-        options = ort.SessionOptions()
-        options.intra_op_num_threads = 2
-        MODEL = ort.InferenceSession(str(Path(__file__).with_name('landslide.onnx')), sess_options=options, providers=['CPUExecutionProvider'])
+        with np.load(Path(__file__).with_name('weights.npz'), allow_pickle=False) as archive:
+            MODEL = dict(archive)
     return MODEL
 
 
@@ -135,7 +133,8 @@ def run(latitude,longitude):
         if valid.sum()==0:raise ValueError('Selected patch is fully obscured by cloud, shadow, water or no-data')
         job.update(state='INFERENCE',progress='Running the 14-channel Sentinel ResUNet')
         tensor=normalize(np.nan_to_num(channels))
-        logits=model().run(None, {'input':tensor[None]})[0][0,0]
+        from .network import predict
+        logits=predict(tensor, model())
         probability=1 / (1 + np.exp(-np.clip(logits, -80, 80)))
         candidate=(probability>=.35)&valid
         rgb=np.stack([bands[3],bands[2],bands[1]],axis=-1)

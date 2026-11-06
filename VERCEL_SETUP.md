@@ -17,15 +17,15 @@ redeploy. It already implements the MOSDAC endpoint too.
 ## Sentinel screening on Vercel
 
 `frontend/api/v1/sentinel/detect.py` processes one POST with latitude/longitude.
-It uses the supplied 14-channel checkpoint exported to ONNX (8 MB);
-`scripts/export_sentinel_onnx.py` verifies outputs against the original PyTorch model.
+It uses the supplied 14-channel checkpoint packed for NumPy inference;
+`scripts/export_sentinel_numpy.py` verifies outputs against the original PyTorch model.
 Run `python -m unittest discover -s tests -v` from frontend to check the adapter.
 Runtime dependencies are pinned in frontend/requirements.txt for Python 3.14.
 The function returns COMPLETE or FAILED in the same request, with inline PNGs,
 so no background worker or in-memory job persistence is required. The duration
 limit is 300 seconds; unavailable bands/cloud mask/terrain withhold inference.
 Raster reading, normalization and threshold match the existing research pipeline;
-ONNX parity is a packaging check, not scientific or field validation.
+Numerical parity is a packaging check, not scientific or field validation.
 
 District lookup uses administrative level 5. On upstream failure the UI loads
 132 reference districts across eight states, with visible source/date/limitations
