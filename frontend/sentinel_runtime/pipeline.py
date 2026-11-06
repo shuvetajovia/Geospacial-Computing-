@@ -1,7 +1,6 @@
 """Synchronous Vercel adapter of backend Sentinel pipeline; verified ONNX checkpoint.
 No background jobs or per-instance image storage.
 """
-import io
 import base64
 
 from concurrent.futures import ThreadPoolExecutor
@@ -9,13 +8,13 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import httpx
 import numpy as np
-from PIL import Image
+from rasterio.io import MemoryFile
 import rasterio
 from rasterio.enums import Resampling
 from rasterio.vrt import WarpedVRT
 from rasterio.transform import from_origin, from_bounds
 from rasterio.warp import transform_bounds, reproject
-from pyproj import Transformer
+from rasterio.warp import transform as transform_coordinates
 
 CATALOG='https://earth-search.aws.element84.com/v1'
 BANDS=['coastal','blue','green','red','rededge1','rededge2','rededge3','nir','nir09','cirrus','swir16','swir22']
@@ -71,7 +70,11 @@ def model():
 
 
 def png(array):
-    stream=io.BytesIO();Image.fromarray(array).save(stream,format='PNG');return stream.getvalue()
+    height, width, channels = array.shape
+    with MemoryFile() as output:
+        with output.open(driver='PNG', width=width, height=height, count=channels, dtype='uint8') as dataset:
+            dataset.write(np.moveaxis(array, -1, 0))
+        return output.read()
 
 
 def geographic_png(array,crs,transform,bounds):
@@ -108,7 +111,8 @@ def run(latitude,longitude):
         elevation=search('cop-dem-glo-30',longitude,latitude,1)
         if not elevation:raise ValueError('No real elevation tile found')
         zone=int((longitude+180)//6)+1;crs=f'EPSG:{32600+zone}'
-        x,y=Transformer.from_crs('EPSG:4326',crs,always_xy=True).transform(longitude,latitude)
+        xs,ys=transform_coordinates('EPSG:4326',crs,[longitude],[latitude])
+        x,y=xs[0],ys[0]
         transform=from_origin(x-640,y+640,10,10)
         job.update(state='READING_RASTERS',progress=f'Reading 11 L2A bands plus same-acquisition B10 from {scene["id"]}',scene_id=scene['id'])
         def fetch(key):return read_band(band_assets[key]['href'],crs,transform)
