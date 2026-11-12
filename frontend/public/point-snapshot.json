@@ -40,10 +40,10 @@
     "cell_latitude": 26.125,
     "cell_longitude": 91.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -88,10 +88,10 @@
    },
    "screen_status": "COMPLETE",
    "screen_checked_at": "2026-11-06T01:29:32.662376+00:00",
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -114,10 +114,10 @@
     "cell_latitude": 25.125,
     "cell_longitude": 93.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -162,10 +162,10 @@
     "cell_latitude": 25.125,
     "cell_longitude": 93.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -210,10 +210,10 @@
     "cell_latitude": 25.875,
     "cell_longitude": 93.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -258,10 +258,10 @@
     "cell_latitude": 25.125,
     "cell_longitude": 93.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -306,10 +306,10 @@
     "cell_latitude": 25.625,
     "cell_longitude": 91.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -354,10 +354,10 @@
     "cell_latitude": 25.625,
     "cell_longitude": 90.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -402,10 +402,10 @@
     "cell_latitude": 25.375,
     "cell_longitude": 91.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -450,10 +450,10 @@
     "cell_latitude": 25.375,
     "cell_longitude": 91.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -498,10 +498,10 @@
     "cell_latitude": 25.375,
     "cell_longitude": 91.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -546,10 +546,10 @@
     "cell_latitude": 27.375,
     "cell_longitude": 88.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -594,10 +594,10 @@
     "cell_latitude": 27.125,
     "cell_longitude": 88.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -642,10 +642,10 @@
     "cell_latitude": 27.375,
     "cell_longitude": 88.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -690,10 +690,10 @@
     "cell_latitude": 27.625,
     "cell_longitude": 88.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -738,10 +738,10 @@
     "cell_latitude": 27.625,
     "cell_longitude": 88.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -786,10 +786,10 @@
     "cell_latitude": 25.625,
     "cell_longitude": 94.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -834,10 +834,10 @@
     "cell_latitude": 26.375,
     "cell_longitude": 94.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -882,10 +882,10 @@
     "cell_latitude": 25.625,
     "cell_longitude": 94.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -930,10 +930,10 @@
     "cell_latitude": 26.125,
     "cell_longitude": 94.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -978,10 +978,10 @@
     "cell_latitude": 25.875,
     "cell_longitude": 94.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1026,10 +1026,10 @@
     "cell_latitude": 23.625,
     "cell_longitude": 92.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1074,10 +1074,10 @@
     "cell_latitude": 22.875,
     "cell_longitude": 92.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1122,10 +1122,10 @@
     "cell_latitude": 23.375,
     "cell_longitude": 93.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1170,10 +1170,10 @@
     "cell_latitude": 23.375,
     "cell_longitude": 92.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1218,13 +1218,35 @@
     "cell_latitude": 22.625,
     "cell_longitude": 92.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
-   }
+   },
+   "sentinel": {
+    "scene_id": "S2C_46QDK_20261108_0_L2A",
+    "acquired_at": "2026-11-08T04:32:20.353000Z",
+    "mean_slope_deg": 25.88,
+    "mean_elevation_m": 782.0,
+    "valid_pixels": 16383,
+    "candidate_pixels": 334,
+    "candidate_pct": 2.04,
+    "bounds": [
+     [
+      22.527514276438044,
+      92.89377175049249
+     ],
+     [
+      22.539085480926868,
+      92.9062277313406
+     ]
+    ],
+    "scene_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_46QDK_20261108_0_L2A"
+   },
+   "screen_status": "COMPLETE",
+   "screen_checked_at": "2026-11-12T20:58:58.919093+00:00"
   },
   "SN-MNP-IMP-01": {
    "weather": {
@@ -1244,10 +1266,10 @@
     "cell_latitude": 24.875,
     "cell_longitude": 93.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1270,10 +1292,10 @@
     "cell_latitude": 25.125,
     "cell_longitude": 94.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1296,10 +1318,10 @@
     "cell_latitude": 24.875,
     "cell_longitude": 93.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1322,10 +1344,10 @@
     "cell_latitude": 25.375,
     "cell_longitude": 94.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1348,10 +1370,10 @@
     "cell_latitude": 24.375,
     "cell_longitude": 93.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1374,10 +1396,10 @@
     "cell_latitude": 27.125,
     "cell_longitude": 93.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1400,10 +1422,10 @@
     "cell_latitude": 28.125,
     "cell_longitude": 95.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1426,10 +1448,10 @@
     "cell_latitude": 27.625,
     "cell_longitude": 91.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1452,10 +1474,10 @@
     "cell_latitude": 27.375,
     "cell_longitude": 92.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1478,10 +1500,10 @@
     "cell_latitude": 27.625,
     "cell_longitude": 93.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1504,10 +1526,10 @@
     "cell_latitude": 28.125,
     "cell_longitude": 96.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1530,10 +1552,10 @@
     "cell_latitude": 23.875,
     "cell_longitude": 91.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1556,10 +1578,10 @@
     "cell_latitude": 23.875,
     "cell_longitude": 92.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1582,10 +1604,10 @@
     "cell_latitude": 24.375,
     "cell_longitude": 92.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -1608,19 +1630,19 @@
     "cell_latitude": 23.875,
     "cell_longitude": 91.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-12T12:15:00+00:00",
-    "filename": "3RIMG_12NOV2026_1215_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-12T20:15:00+00:00",
+    "filename": "3RIMG_12NOV2026_2015_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   }
  },
- "checked_at": "2026-11-12T12:54:56.676831+00:00",
+ "checked_at": "2026-11-12T20:58:58.919093+00:00",
  "status": {
-  "weather": "Weather acquisition checked",
-  "persiann": "41 points sampled for 2026-11-10 UTC",
+  "weather": "Partial or unavailable: ReadTimeout",
+  "persiann": "Latest published day already stored",
   "hem": "Sampled available raster pixels"
  }
 }
