@@ -2,13 +2,13 @@
  "points": {
   "SN-ASM-GUA-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 22.3,
-    "rain_24h_obs": 1.3,
-    "rain_48h_prior": 1.9,
-    "rain_72h_prior": 2.1,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 20.5,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 1.3,
+    "rain_72h_prior": 2.0,
     "rain_7d_prior": 2.1,
-    "api_7d": 1.95
+    "api_7d": 1.65
    },
    "sentinel": {
     "scene_id": "S2C_46RCP_20261101_0_L2A",
@@ -33,36 +33,36 @@
    "screen_status": "COMPLETE",
    "screen_checked_at": "2026-11-06T01:19:26.956366+00:00",
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.309,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 4.319,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 26.125,
     "cell_longitude": 91.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-ASM-SIL-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 32.7,
-    "rain_24h_obs": 3.2,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 32.5,
+    "rain_24h_obs": 0.0,
     "rain_48h_prior": 3.2,
     "rain_72h_prior": 3.9,
     "rain_7d_prior": 3.9,
-    "api_7d": 3.69
+    "api_7d": 3.18
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.348,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 24.875,
     "cell_longitude": 92.875
    },
@@ -88,36 +88,36 @@
    },
    "screen_status": "COMPLETE",
    "screen_checked_at": "2026-11-06T01:29:32.662376+00:00",
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-ASM-DH-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 33.4,
-    "rain_24h_obs": 1.3,
-    "rain_48h_prior": 1.9,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 31.9,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 1.3,
     "rain_72h_prior": 1.9,
     "rain_7d_prior": 1.9,
-    "api_7d": 1.8
+    "api_7d": 1.52
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.592,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.279,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.125,
     "cell_longitude": 93.125
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -146,26 +146,26 @@
   },
   "SN-ASM-HAF-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 33.4,
-    "rain_24h_obs": 1.3,
-    "rain_48h_prior": 1.9,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 31.9,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 1.3,
     "rain_72h_prior": 1.9,
     "rain_7d_prior": 1.9,
-    "api_7d": 1.8
+    "api_7d": 1.52
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.592,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.279,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.125,
     "cell_longitude": 93.125
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -194,26 +194,26 @@
   },
   "SN-ASM-KA-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 34.2,
-    "rain_24h_obs": 12.3,
-    "rain_48h_prior": 14.8,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 31.0,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 12.3,
     "rain_72h_prior": 14.8,
     "rain_7d_prior": 14.8,
-    "api_7d": 14.4
+    "api_7d": 12.1
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 2.584,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.875,
     "cell_longitude": 93.375
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -242,26 +242,26 @@
   },
   "SN-ASM-RRL-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 27.8,
-    "rain_24h_obs": 1.2,
-    "rain_48h_prior": 2.1,
-    "rain_72h_prior": 5.0,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 25.6,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 1.2,
+    "rain_72h_prior": 3.6,
     "rain_7d_prior": 5.0,
-    "api_7d": 4.0
+    "api_7d": 3.53
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.592,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.279,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.125,
     "cell_longitude": 93.125
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -290,26 +290,26 @@
   },
   "SN-MEG-SHI-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 40.4,
-    "rain_24h_obs": 1.1,
-    "rain_48h_prior": 3.3,
-    "rain_72h_prior": 5.4,
-    "rain_7d_prior": 7.3,
-    "api_7d": 5.22
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 41.6,
+    "rain_24h_obs": 0.4,
+    "rain_48h_prior": 1.3,
+    "rain_72h_prior": 3.4,
+    "rain_7d_prior": 7.1,
+    "api_7d": 4.43
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.586,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 2.115,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.625,
     "cell_longitude": 91.875
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -338,26 +338,26 @@
   },
   "SN-MEG-TUR-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 32.1,
-    "rain_24h_obs": 3.2,
-    "rain_48h_prior": 4.6,
-    "rain_72h_prior": 5.6,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 32.9,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 3.2,
+    "rain_72h_prior": 4.6,
     "rain_7d_prior": 7.1,
-    "api_7d": 5.95
+    "api_7d": 5.0
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 3.719,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.625,
     "cell_longitude": 90.125
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -386,26 +386,26 @@
   },
   "SN-MEG-CHE-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 42.6,
-    "rain_24h_obs": 2.7,
-    "rain_48h_prior": 6.3,
-    "rain_72h_prior": 7.5,
-    "rain_7d_prior": 10.8,
-    "api_7d": 8.24
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 40.2,
+    "rain_24h_obs": 0.3,
+    "rain_48h_prior": 2.9,
+    "rain_72h_prior": 6.3,
+    "rain_7d_prior": 10.6,
+    "api_7d": 6.95
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.288,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.8,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.375,
     "cell_longitude": 91.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -434,26 +434,26 @@
   },
   "SN-MEG-MAW-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 39.8,
-    "rain_24h_obs": 2.5,
-    "rain_48h_prior": 5.0,
-    "rain_72h_prior": 6.3,
-    "rain_7d_prior": 7.3,
-    "api_7d": 6.04
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 38.8,
+    "rain_24h_obs": 0.1,
+    "rain_48h_prior": 2.6,
+    "rain_72h_prior": 5.0,
+    "rain_7d_prior": 7.0,
+    "api_7d": 5.01
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.288,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.8,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.375,
     "cell_longitude": 91.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -482,26 +482,26 @@
   },
   "SN-MEG-EKH-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 36.4,
-    "rain_24h_obs": 0.9,
-    "rain_48h_prior": 5.2,
-    "rain_72h_prior": 5.7,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 35.4,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 1.1,
+    "rain_72h_prior": 5.3,
     "rain_7d_prior": 8.5,
-    "api_7d": 6.29
+    "api_7d": 5.32
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 2.868,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.375,
     "cell_longitude": 91.875
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -530,26 +530,26 @@
   },
   "SN-SKM-GAN-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 36.3,
-    "rain_24h_obs": 1.3,
-    "rain_48h_prior": 3.4,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 34.6,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 1.4,
     "rain_72h_prior": 3.4,
-    "rain_7d_prior": 4.3,
-    "api_7d": 3.44
+    "rain_7d_prior": 4.0,
+    "api_7d": 2.81
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.757,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 27.375,
     "cell_longitude": 88.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -578,26 +578,26 @@
   },
   "SN-SKM-NAM-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 29.9,
-    "rain_24h_obs": 0.2,
-    "rain_48h_prior": 3.3,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 29.7,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 0.2,
     "rain_72h_prior": 3.3,
     "rain_7d_prior": 3.3,
-    "api_7d": 2.8
+    "api_7d": 2.36
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.685,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 27.125,
     "cell_longitude": 88.375
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -626,26 +626,26 @@
   },
   "SN-SKM-MAN-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 34.2,
-    "rain_24h_obs": 0.5,
-    "rain_48h_prior": 1.9,
-    "rain_72h_prior": 2.0,
-    "rain_7d_prior": 2.4,
-    "api_7d": 1.93
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 32.2,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 0.8,
+    "rain_72h_prior": 1.9,
+    "rain_7d_prior": 2.3,
+    "api_7d": 1.63
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.757,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 27.375,
     "cell_longitude": 88.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -674,26 +674,26 @@
   },
   "SN-SKM-DZO-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 33.7,
-    "rain_24h_obs": 0.7,
-    "rain_48h_prior": 2.9,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 31.7,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 1.7,
     "rain_72h_prior": 2.9,
     "rain_7d_prior": 3.1,
-    "api_7d": 2.63
+    "api_7d": 2.35
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
+    "period_start": "2026-11-11T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 27.625,
     "cell_longitude": 88.375
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -722,26 +722,26 @@
   },
   "SN-SKM-CHU-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 33.1,
-    "rain_24h_obs": 0.4,
-    "rain_48h_prior": 0.6,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 32.5,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 0.4,
     "rain_72h_prior": 0.6,
-    "rain_7d_prior": 1.8,
-    "api_7d": 1.06
+    "rain_7d_prior": 1.5,
+    "api_7d": 0.83
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
+    "period_start": "2026-11-11T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 27.625,
     "cell_longitude": 88.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -770,26 +770,26 @@
   },
   "SN-NGL-KOH-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 47.4,
-    "rain_24h_obs": 10.5,
-    "rain_48h_prior": 13.1,
-    "rain_72h_prior": 14.7,
-    "rain_7d_prior": 15.7,
-    "api_7d": 14.23
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 43.2,
+    "rain_24h_obs": 0.2,
+    "rain_48h_prior": 10.9,
+    "rain_72h_prior": 13.1,
+    "rain_7d_prior": 15.6,
+    "api_7d": 12.01
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 5.339,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.242,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.625,
     "cell_longitude": 94.125
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -818,26 +818,26 @@
   },
   "SN-NGL-MOK-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 45.9,
-    "rain_24h_obs": 3.6,
-    "rain_48h_prior": 6.3,
-    "rain_72h_prior": 10.0,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 42.5,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 3.6,
+    "rain_72h_prior": 7.3,
     "rain_7d_prior": 10.0,
-    "api_7d": 8.48
+    "api_7d": 7.24
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 3.734,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.599,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 26.375,
     "cell_longitude": 94.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -866,26 +866,26 @@
   },
   "SN-NGL-PHE-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 35.0,
-    "rain_24h_obs": 8.1,
-    "rain_48h_prior": 11.4,
-    "rain_72h_prior": 14.2,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 33.6,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 8.3,
+    "rain_72h_prior": 12.2,
     "rain_7d_prior": 14.8,
-    "api_7d": 13.1
+    "api_7d": 11.13
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 8.497,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.86,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.625,
     "cell_longitude": 94.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -914,26 +914,26 @@
   },
   "SN-NGL-WOK-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 41.0,
-    "rain_24h_obs": 2.6,
-    "rain_48h_prior": 6.4,
-    "rain_72h_prior": 6.8,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 39.2,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 2.6,
+    "rain_72h_prior": 6.5,
     "rain_7d_prior": 6.8,
-    "api_7d": 6.07
+    "api_7d": 5.11
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 2.719,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.342,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 26.125,
     "cell_longitude": 94.375
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -962,26 +962,26 @@
   },
   "SN-NGL-KIP-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 30.4,
-    "rain_24h_obs": 5.0,
-    "rain_48h_prior": 9.2,
-    "rain_72h_prior": 11.4,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 29.9,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 5.1,
+    "rain_72h_prior": 10.4,
     "rain_7d_prior": 11.4,
-    "api_7d": 10.08
+    "api_7d": 8.62
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 9.764,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.869,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.875,
     "cell_longitude": 94.875
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1010,26 +1010,26 @@
   },
   "SN-MZR-AIZ-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 17.9,
-    "rain_24h_obs": 6.6,
-    "rain_48h_prior": 6.7,
-    "rain_72h_prior": 8.2,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 15.6,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 6.6,
+    "rain_72h_prior": 7.2,
     "rain_7d_prior": 9.7,
-    "api_7d": 8.49
+    "api_7d": 7.2
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 5.272,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.487,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 23.625,
     "cell_longitude": 92.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1058,26 +1058,26 @@
   },
   "SN-MZR-LUN-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 28.8,
-    "rain_24h_obs": 1.6,
-    "rain_48h_prior": 6.4,
-    "rain_72h_prior": 8.2,
-    "rain_7d_prior": 11.1,
-    "api_7d": 8.32
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 27.1,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 2.9,
+    "rain_72h_prior": 6.7,
+    "rain_7d_prior": 10.7,
+    "api_7d": 7.1
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 9.783,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 22.875,
     "cell_longitude": 92.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1106,26 +1106,26 @@
   },
   "SN-MZR-CHA-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 18.2,
-    "rain_24h_obs": 4.0,
-    "rain_48h_prior": 5.6,
-    "rain_72h_prior": 6.6,
-    "rain_7d_prior": 6.7,
-    "api_7d": 6.08
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 16.6,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 4.4,
+    "rain_72h_prior": 5.9,
+    "rain_7d_prior": 6.6,
+    "api_7d": 5.17
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 12.928,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.694,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 23.375,
     "cell_longitude": 93.375
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1154,26 +1154,26 @@
   },
   "SN-MZR-SER-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 30.2,
-    "rain_24h_obs": 6.2,
-    "rain_48h_prior": 6.6,
-    "rain_72h_prior": 8.5,
-    "rain_7d_prior": 11.0,
-    "api_7d": 9.23
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 28.9,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 6.2,
+    "rain_72h_prior": 6.6,
+    "rain_7d_prior": 10.9,
+    "api_7d": 7.72
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 10.857,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 23.375,
     "cell_longitude": 92.875
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1202,26 +1202,26 @@
   },
   "SN-MZR-LAW-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 27.8,
-    "rain_24h_obs": 0.7,
-    "rain_48h_prior": 2.4,
-    "rain_72h_prior": 6.1,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 26.9,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 1.2,
+    "rain_72h_prior": 2.5,
     "rain_7d_prior": 13.1,
-    "api_7d": 8.56
+    "api_7d": 7.61
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 12.567,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 22.625,
     "cell_longitude": 92.875
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1250,26 +1250,26 @@
   },
   "SN-MNP-IMP-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 28.7,
-    "rain_24h_obs": 9.5,
-    "rain_48h_prior": 10.9,
-    "rain_72h_prior": 11.7,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 27.2,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 9.8,
+    "rain_72h_prior": 10.9,
     "rain_7d_prior": 11.9,
-    "api_7d": 11.36
+    "api_7d": 9.58
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 7.654,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 24.875,
     "cell_longitude": 93.875
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1298,373 +1298,395 @@
   },
   "SN-MNP-UKH-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 30.9,
-    "rain_24h_obs": 6.5,
-    "rain_48h_prior": 9.7,
-    "rain_72h_prior": 14.2,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 28.7,
+    "rain_24h_obs": 0.2,
+    "rain_48h_prior": 7.5,
+    "rain_72h_prior": 10.0,
     "rain_7d_prior": 16.9,
-    "api_7d": 13.84
+    "api_7d": 11.82
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 12.086,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.364,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.125,
     "cell_longitude": 94.375
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
-   }
+   },
+   "sentinel": {
+    "scene_id": "S2B_46RFN_20261113_0_L2A",
+    "acquired_at": "2026-11-13T04:31:33.849000Z",
+    "mean_slope_deg": 24.5,
+    "mean_elevation_m": 1892.2,
+    "valid_pixels": 1170,
+    "candidate_pixels": 0,
+    "candidate_pct": 0.0,
+    "bounds": [
+     [
+      25.11086052091355,
+      94.42688657927425
+     ],
+     [
+      25.122539234974457,
+      94.43971401710213
+     ]
+    ],
+    "scene_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_46RFN_20261113_0_L2A"
+   },
+   "screen_status": "COMPLETE",
+   "screen_checked_at": "2026-11-13T09:42:32.003602+00:00"
   },
   "SN-MNP-TAM-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 25.4,
-    "rain_24h_obs": 7.4,
-    "rain_48h_prior": 8.4,
-    "rain_72h_prior": 9.2,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 23.0,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 7.4,
+    "rain_72h_prior": 8.4,
     "rain_7d_prior": 9.4,
-    "api_7d": 8.92
+    "api_7d": 7.5
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 4.655,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.586,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 24.875,
     "cell_longitude": 93.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-MNP-SEN-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 23.1,
-    "rain_24h_obs": 6.7,
-    "rain_48h_prior": 7.9,
-    "rain_72h_prior": 10.0,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 23.2,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 7.0,
+    "rain_72h_prior": 8.0,
     "rain_7d_prior": 10.0,
-    "api_7d": 9.19
+    "api_7d": 7.77
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 4.344,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.797,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 25.375,
     "cell_longitude": 94.125
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-MNP-CHU-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 32.0,
-    "rain_24h_obs": 7.5,
-    "rain_48h_prior": 8.4,
-    "rain_72h_prior": 9.4,
-    "rain_7d_prior": 10.2,
-    "api_7d": 9.3
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 30.5,
+    "rain_24h_obs": 0.1,
+    "rain_48h_prior": 7.9,
+    "rain_72h_prior": 8.5,
+    "rain_7d_prior": 10.1,
+    "api_7d": 7.9
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 8.913,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.062,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 24.375,
     "cell_longitude": 93.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-ARN-ITA-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 25.0,
-    "rain_24h_obs": 2.0,
-    "rain_48h_prior": 2.3,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 23.5,
+    "rain_24h_obs": 0.1,
+    "rain_48h_prior": 2.0,
     "rain_72h_prior": 2.3,
     "rain_7d_prior": 2.3,
-    "api_7d": 2.25
+    "api_7d": 1.91
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.575,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 27.125,
     "cell_longitude": 93.625
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-ARN-PAS-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 33.8,
-    "rain_24h_obs": 3.7,
-    "rain_48h_prior": 4.6,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 33.4,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 3.7,
     "rain_72h_prior": 5.1,
     "rain_7d_prior": 5.1,
-    "api_7d": 4.81
+    "api_7d": 4.1
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.385,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 28.125,
     "cell_longitude": 95.375
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-ARN-TAW-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 31.9,
-    "rain_24h_obs": 0.5,
-    "rain_48h_prior": 0.8,
-    "rain_72h_prior": 1.1,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 31.1,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 0.5,
+    "rain_72h_prior": 0.8,
     "rain_7d_prior": 1.1,
-    "api_7d": 0.96
+    "api_7d": 0.81
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.161,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 27.625,
     "cell_longitude": 91.875
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-ARN-BOM-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 34.1,
-    "rain_24h_obs": 2.5,
-    "rain_48h_prior": 5.4,
-    "rain_72h_prior": 7.8,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 31.6,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 4.0,
+    "rain_72h_prior": 5.6,
     "rain_7d_prior": 8.0,
-    "api_7d": 6.73
+    "api_7d": 5.88
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
+    "period_start": "2026-11-11T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 27.375,
     "cell_longitude": 92.375
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-ARN-ZIR-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 33.4,
-    "rain_24h_obs": 3.4,
-    "rain_48h_prior": 6.4,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 32.5,
+    "rain_24h_obs": 0.1,
+    "rain_48h_prior": 3.6,
     "rain_72h_prior": 6.5,
     "rain_7d_prior": 6.5,
-    "api_7d": 5.99
+    "api_7d": 5.09
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 3.506,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 27.625,
     "cell_longitude": 93.875
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-ARN-ANJ-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 36.7,
-    "rain_24h_obs": 2.0,
-    "rain_48h_prior": 9.4,
-    "rain_72h_prior": 11.1,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 36.8,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 2.0,
+    "rain_72h_prior": 9.7,
     "rain_7d_prior": 11.1,
-    "api_7d": 9.42
+    "api_7d": 7.94
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 10.213,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.445,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 28.125,
     "cell_longitude": 96.875
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-TPR-AGA-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 28.2,
-    "rain_24h_obs": 1.0,
-    "rain_48h_prior": 3.2,
-    "rain_72h_prior": 3.4,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 28.4,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 1.0,
+    "rain_72h_prior": 3.2,
     "rain_7d_prior": 3.6,
-    "api_7d": 3.11
+    "api_7d": 2.61
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 1.293,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 23.875,
     "cell_longitude": 91.375
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-TPR-JAM-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 11.0,
-    "rain_24h_obs": 7.7,
-    "rain_48h_prior": 8.7,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 9.8,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 7.7,
     "rain_72h_prior": 9.0,
     "rain_7d_prior": 9.0,
-    "api_7d": 8.75
+    "api_7d": 7.39
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 1.44,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.558,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 23.875,
     "cell_longitude": 92.375
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-TPR-DHA-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 20.0,
-    "rain_24h_obs": 4.9,
-    "rain_48h_prior": 6.1,
-    "rain_72h_prior": 6.5,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 18.7,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 4.9,
+    "rain_72h_prior": 6.1,
     "rain_7d_prior": 6.5,
-    "api_7d": 6.19
+    "api_7d": 5.2
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.414,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 24.375,
     "cell_longitude": 92.125
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   },
   "SN-TPR-DHL-01": {
    "weather": {
-    "last_updated": "2026-11-12T12:00:00+00:00",
-    "soil_moisture": 13.5,
-    "rain_24h_obs": 0.4,
-    "rain_48h_prior": 1.5,
+    "last_updated": "2026-11-13T09:00:00+00:00",
+    "soil_moisture": 13.6,
+    "rain_24h_obs": 0.0,
+    "rain_48h_prior": 0.4,
     "rain_72h_prior": 1.5,
     "rain_7d_prior": 1.8,
-    "api_7d": 1.49
+    "api_7d": 1.25
    },
    "persiann": {
-    "period_start": "2026-11-10T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-11T00:00:00+00:00",
+    "value": 0.569,
     "units": "mm/24h",
-    "file": "ms6s4_d26314.bin.gz",
+    "file": "ms6s4_d26315.bin.gz",
     "cell_latitude": 23.875,
     "cell_longitude": 91.875
    },
-   "weatherFallback": true,
+   "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-13T01:15:00+00:00",
-    "filename": "3RIMG_13NOV2026_0115_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-13T08:45:00+00:00",
+    "filename": "3RIMG_13NOV2026_0845_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
   }
  },
- "checked_at": "2026-11-13T01:59:41.700337+00:00",
+ "checked_at": "2026-11-13T09:42:32.003602+00:00",
  "status": {
-  "weather": "Partial or unavailable: ReadTimeout",
-  "persiann": "Latest published day already stored",
+  "weather": "Weather acquisition checked",
+  "persiann": "41 points sampled for 2026-11-11 UTC",
   "hem": "Sampled available raster pixels"
  }
 }
