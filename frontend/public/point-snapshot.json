@@ -33,17 +33,17 @@
    "screen_status": "COMPLETE",
    "screen_checked_at": "2026-11-17T12:05:45.707265+00:00",
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.582,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 26.125,
     "cell_longitude": 91.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -59,10 +59,10 @@
     "api_7d": 13.7
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 1.147,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 24.875,
     "cell_longitude": 92.875
    },
@@ -88,10 +88,10 @@
    },
    "screen_status": "COMPLETE",
    "screen_checked_at": "2026-11-17T21:04:14.377511+00:00",
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    }
@@ -107,17 +107,17 @@
     "api_7d": 4.35
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.957,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.125,
     "cell_longitude": 93.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -155,17 +155,17 @@
     "api_7d": 4.35
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.957,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.125,
     "cell_longitude": 93.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -203,17 +203,17 @@
     "api_7d": 28.46
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.939,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.875,
     "cell_longitude": 93.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -251,17 +251,17 @@
     "api_7d": 11.56
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.957,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.125,
     "cell_longitude": 93.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -299,17 +299,17 @@
     "api_7d": 15.6
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.694,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.625,
     "cell_longitude": 91.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -347,17 +347,17 @@
     "api_7d": 15.94
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 1.095,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.625,
     "cell_longitude": 90.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -395,17 +395,17 @@
     "api_7d": 12.83
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.489,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.375,
     "cell_longitude": 91.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -443,17 +443,17 @@
     "api_7d": 15.55
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.489,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.375,
     "cell_longitude": 91.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -491,17 +491,17 @@
     "api_7d": 9.48
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 1.235,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.375,
     "cell_longitude": 91.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -539,17 +539,17 @@
     "api_7d": 5.31
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 27.375,
     "cell_longitude": 88.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -587,17 +587,17 @@
     "api_7d": 0.67
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 27.125,
     "cell_longitude": 88.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -635,17 +635,17 @@
     "api_7d": 4.64
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 27.375,
     "cell_longitude": 88.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -683,17 +683,17 @@
     "api_7d": 6.64
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 27.625,
     "cell_longitude": 88.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -731,17 +731,17 @@
     "api_7d": 4.63
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 27.625,
     "cell_longitude": 88.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -779,17 +779,17 @@
     "api_7d": 36.55
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 1.274,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.625,
     "cell_longitude": 94.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -827,17 +827,17 @@
     "api_7d": 45.5
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.842,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 26.375,
     "cell_longitude": 94.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -875,17 +875,17 @@
     "api_7d": 22.38
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.813,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.625,
     "cell_longitude": 94.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -923,17 +923,17 @@
     "api_7d": 18.99
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.831,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 26.125,
     "cell_longitude": 94.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -957,8 +957,8 @@
     ],
     "scene_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_46RFP_20261108_0_L2A"
    },
-   "screen_status": "COMPLETE",
-   "screen_checked_at": "2026-11-10T23:30:50.717604+00:00"
+   "screen_status": "FAILED",
+   "screen_checked_at": "2026-11-23T14:56:33.168539+00:00"
   },
   "SN-NGL-KIP-01": {
    "weather": {
@@ -971,17 +971,17 @@
     "api_7d": 22.41
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.644,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.251,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.875,
     "cell_longitude": 94.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1019,17 +1019,17 @@
     "api_7d": 27.97
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.268,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 23.625,
     "cell_longitude": 92.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1067,17 +1067,17 @@
     "api_7d": 45.17
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 22.875,
     "cell_longitude": 92.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1115,17 +1115,17 @@
     "api_7d": 27.56
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.268,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 23.375,
     "cell_longitude": 93.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1163,17 +1163,17 @@
     "api_7d": 38.87
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.0,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.578,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 23.375,
     "cell_longitude": 92.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1211,17 +1211,17 @@
     "api_7d": 43.88
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 22.625,
     "cell_longitude": 92.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1259,17 +1259,17 @@
     "api_7d": 12.22
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.695,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 24.875,
     "cell_longitude": 93.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1307,17 +1307,17 @@
     "api_7d": 15.44
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 1.307,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.125,
     "cell_longitude": 94.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1355,17 +1355,17 @@
     "api_7d": 18.93
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.852,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 24.875,
     "cell_longitude": 93.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1403,17 +1403,17 @@
     "api_7d": 19.26
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.51,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 25.375,
     "cell_longitude": 94.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1451,17 +1451,17 @@
     "api_7d": 24.86
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.115,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 24.375,
     "cell_longitude": 93.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1499,17 +1499,17 @@
     "api_7d": 8.01
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.136,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 27.125,
     "cell_longitude": 93.625
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1547,17 +1547,17 @@
     "api_7d": 5.78
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 28.125,
     "cell_longitude": 95.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1595,17 +1595,17 @@
     "api_7d": 1.19
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.09,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 27.625,
     "cell_longitude": 91.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1643,17 +1643,17 @@
     "api_7d": 3.12
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 27.375,
     "cell_longitude": 92.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1691,17 +1691,17 @@
     "api_7d": 2.78
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 27.625,
     "cell_longitude": 93.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1739,17 +1739,17 @@
     "api_7d": 6.02
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
+    "period_start": "2026-11-21T00:00:00+00:00",
     "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 28.125,
     "cell_longitude": 96.875
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1787,17 +1787,17 @@
     "api_7d": 38.39
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 1.222,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 23.875,
     "cell_longitude": 91.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1835,17 +1835,17 @@
     "api_7d": 28.97
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.702,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.531,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 23.875,
     "cell_longitude": 92.375
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1883,17 +1883,17 @@
     "api_7d": 18.66
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 0.052,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 24.375,
     "cell_longitude": 92.125
    },
-   "weatherFallback": false,
+   "weatherFallback": true,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1922,26 +1922,26 @@
   },
   "SN-TPR-DHL-01": {
    "weather": {
-    "last_updated": "2026-11-23T03:00:00+00:00",
-    "soil_moisture": 35.3,
-    "rain_24h_obs": 2.1,
-    "rain_48h_prior": 4.2,
-    "rain_72h_prior": 16.1,
-    "rain_7d_prior": 49.0,
-    "api_7d": 31.15
+    "last_updated": "2026-11-23T14:00:00+00:00",
+    "soil_moisture": 35.0,
+    "rain_24h_obs": 1.5,
+    "rain_48h_prior": 2.4,
+    "rain_72h_prior": 11.4,
+    "rain_7d_prior": 49.3,
+    "api_7d": 29.33
    },
    "persiann": {
-    "period_start": "2026-11-20T00:00:00+00:00",
-    "value": 1.36,
+    "period_start": "2026-11-21T00:00:00+00:00",
+    "value": 0.0,
     "units": "mm/24h",
-    "file": "ms6s4_d26324.bin.gz",
+    "file": "ms6s4_d26325.bin.gz",
     "cell_latitude": 23.875,
     "cell_longitude": 91.875
    },
    "weatherFallback": false,
    "hem": {
-    "acquired_at": "2026-11-22T21:45:00+00:00",
-    "filename": "3RIMG_22NOV2026_2145_L2B_HEM_V01R00.h5",
+    "acquired_at": "2026-11-23T14:15:00+00:00",
+    "filename": "3RIMG_23NOV2026_1415_L2B_HEM_V01R00.h5",
     "value": 0.0,
     "units": "mm/hr"
    },
@@ -1969,10 +1969,10 @@
    "screen_checked_at": "2026-11-17T02:33:40.687507+00:00"
   }
  },
- "checked_at": "2026-11-23T03:46:22.824622+00:00",
+ "checked_at": "2026-11-23T14:56:33.168539+00:00",
  "status": {
-  "weather": "Weather acquisition checked",
-  "persiann": "Latest published day already stored",
+  "weather": "Partial or unavailable: ReadTimeout",
+  "persiann": "41 points sampled for 2026-11-21 UTC",
   "hem": "Sampled available raster pixels"
  }
 }
